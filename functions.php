@@ -158,6 +158,8 @@ function mytheme_customize_register($wp_customize)
     ));
 
 
+
+    
     /** ИСПОЛЬЗУЕМ ВЛОЖЕННЫЕ КОНТЕЙНЕРЫ **/
     /* КОНТАКТЫ */
     // Создаем панель (родительский контейнер)
@@ -451,3 +453,15 @@ function mytheme_customize_register($wp_customize)
 }
 add_action('customize_register', 'mytheme_customize_register');
 /*** END ДОБАВЛЯЕМ ВОЗМОЖНОСТЬ В НАСТРОЙКАХ ТЕМЫ ДОБАВИТЬ КОНТАКТЫ И КОД СЧЕТЧИКА ***/
+
+
+
+
+/*** ДЕЛАЕМ ФАЙЛ ROBOTS.TXT ***/
+/* Работает только для основного сайта на домене */
+add_filter('robots_txt', 'custom_robots_txt');
+function custom_robots_txt($output) {
+    $output = "User-agent: *\n";
+    return $output;
+}
+/*** END ДЕЛАЕМ ФАЙЛ ROBOTS.TXT ***/
