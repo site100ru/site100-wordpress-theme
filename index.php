@@ -26,16 +26,14 @@ if (isset($_SESSION['win'])) {
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description"
-		content="Разработаю продающий сайт. Настрою контекстную рекламу. Подключу CRM, онлайн оплату, сервис доставки. Создам систему привлечения клиентов в Ваш бизнес." />
-	<meta name="keywords"
-		content="Создание сайтов, разработка сайтов, продвижение сайтов, сео продвижение сайтов, seo продвижение сайтов, контекстная реклама, реклама в Яндексе, реклама в Яндекс Директ, настройка Яндекс Директ, поддержка сайтов, администрирование сайтов" />
+	<meta name="description" content="Разработаю продающий сайт. Настрою контекстную рекламу. Подключу CRM, онлайн оплату, сервис доставки. Создам систему привлечения клиентов в Ваш бизнес." />
+	<meta name="keywords" content="Создание сайтов, разработка сайтов, продвижение сайтов, сео продвижение сайтов, seo продвижение сайтов, контекстная реклама, реклама в Яндексе, реклама в Яндекс Директ, настройка Яндекс Директ, поддержка сайтов, администрирование сайтов" />
 	<meta property="og:locale" content="ru_RU" />
 	<meta property="og:type" content="website" />
 	<meta property="og:site_name" content="Создание, продвижение и поддержка сайтов в Москве и МО" />
 	<meta property="og:title" content="Создание, продвижение и поддержка сайтов в Москве и МО" />
-	<meta property="og:description"
-		content="Создание сайтов, продвижение сайтов, контекстная реклама, сео-продвижение, поддержка сайтов" />
+	<meta property="og:description" content="Создание сайтов, продвижение сайтов, контекстная реклама, сео-продвижение, поддержка сайтов" />
+	
 	<!-- Bootstrap CSS -->
 	<link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css" rel="stylesheet">
 
@@ -351,6 +349,7 @@ if (isset($_SESSION['win'])) {
 			</div>
 		</section>
 
+		
 		<!-- Site create section -->
 		<div id="sp-create"></div>
 		<section id="site-create-section" class="py-5">
@@ -651,9 +650,9 @@ if (isset($_SESSION['win'])) {
 								</li>
 							</ul>
 						</div>
-						<div class="d-md-none text-center"><img
-								src="<?php echo get_template_directory_uri(); ?>/img/ico/left-right-finger.png"
-								style="opacity: 1; max-width: 25px;"></div>
+						<div class="d-md-none text-center">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/ico/left-right-finger.png" style="opacity: 1; max-width: 25px;">
+						</div>
 						<div class="tab-content pt-5" id="myTabContent">
 							<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 								<div class="row pt-3">
@@ -740,12 +739,10 @@ if (isset($_SESSION['win'])) {
 										</h5>
 									</div>
 									<div class="col-md-4 mb-5">
-										<a href="https://site100.ru/unistyle-mebel/" target="_blank">
-											<img src="<?php echo get_template_directory_uri(); ?>/img/site-portfolio/unistyle-mebel.jpg"
-												class="img-fluid mb-4 w-100" style="border-radius: 20px;">
+										<a href="https://site100.ru/furniture/" target="_blank">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/site-portfolio/site-portfolio-furniture.webp" class="img-fluid mb-4 w-100" style="border-radius: 20px;">
 										</a>
-										<h5 style="font-family: var(--font-family); font-size: 24px; color: #fff;">Производство и продажа
-											корпусной мебели</h5>
+										<h5 style="font-family: var(--font-family); font-size: 24px; color: #fff;">Производство и продажа корпусной мебели</h5>
 									</div>
 									<div class="col-md-4 mb-5">
 										<a href="https://gyard.ru" target="_blank">
