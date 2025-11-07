@@ -732,7 +732,7 @@ if (isset($_SESSION['win'])) {
 								<div class="row pt-3">
 									<div class="col-md-4 mb-5">
 										<a href="https://stock-line.ru" target="_blank">
-											<img src="<?php echo get_template_directory_uri(); ?>/img/site-portfolio/stock-line.jpg"
+											<img src="<?php echo get_template_directory_uri(); ?>/img/site-portfolio/site-portfolio-stock-line.webp"
 												class="img-fluid mb-4 w-100" style="border-radius: 20px;">
 										</a>
 										<h5 style="font-family: var(--font-family); font-size: 24px; color: #fff;">Продажа пиломатериалов
@@ -743,6 +743,12 @@ if (isset($_SESSION['win'])) {
 											<img src="<?php echo get_template_directory_uri(); ?>/img/site-portfolio/site-portfolio-furniture.webp" class="img-fluid mb-4 w-100" style="border-radius: 20px;">
 										</a>
 										<h5 style="font-family: var(--font-family); font-size: 24px; color: #fff;">Производство и продажа корпусной мебели</h5>
+									</div>
+									<div class="col-md-4 mb-5">
+										<a href="https://esenin-group.ru" target="_blank">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/site-portfolio/site-portfolio-esenine-group.webp" class="img-fluid mb-4 w-100">
+										</a>
+										<h5 style="font-family: var(--font-family); font-size: 24px; color: #fff;">Строительная компания «Есенин-групп»</h5>
 									</div>
 									<div class="col-md-4 mb-5">
 										<a href="https://gyard.ru" target="_blank">
@@ -803,7 +809,7 @@ if (isset($_SESSION['win'])) {
 								<div class="row pt-3">
 									<div class="col-md-4 mb-5">
 										<a href="https://site100.ru/site100-lumber/" target="_blank">
-											<img src="<?php echo get_template_directory_uri(); ?>/img/site-portfolio/stock-line.jpg"
+											<img src="<?php echo get_template_directory_uri(); ?>/img/site-portfolio/site-portfolio-stock-line.webp"
 												class="img-fluid mb-4 w-100" style="border-radius: 20px;">
 										</a>
 										<h5 style="font-family: var(--font-family); font-size: 24px; color: #fff;">Продажа пиломатериалов
