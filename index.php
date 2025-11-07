@@ -731,19 +731,18 @@ if (isset($_SESSION['win'])) {
 							<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 								<div class="row pt-3">
 									<div class="col-md-4 mb-5">
-										<a href="https://stock-line.ru" target="_blank">
-											<img src="<?php echo get_template_directory_uri(); ?>/img/site-portfolio/site-portfolio-stock-line.webp"
-												class="img-fluid mb-4 w-100" style="border-radius: 20px;">
-										</a>
-										<h5 style="font-family: var(--font-family); font-size: 24px; color: #fff;">Продажа пиломатериалов
-										</h5>
-									</div>
-									<div class="col-md-4 mb-5">
 										<a href="https://site100.ru/furniture/" target="_blank">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/site-portfolio/site-portfolio-furniture.webp" class="img-fluid mb-4 w-100" style="border-radius: 20px;">
 										</a>
-										<h5 style="font-family: var(--font-family); font-size: 24px; color: #fff;">Производство и продажа корпусной мебели</h5>
+										<h5 style="font-family: var(--font-family); font-size: 24px; color: #fff;">Готовое решение для мебельных компаний</h5>
 									</div>
+									<div class="col-md-4 mb-5">
+										<a href="https://stock-line.ru" target="_blank">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/site-portfolio/site-portfolio-stock-line.webp" class="img-fluid mb-4 w-100" style="border-radius: 20px;">
+										</a>
+										<h5 style="font-family: var(--font-family); font-size: 24px; color: #fff;">Компания по продаже пиломатериалов «Стоклайн»</h5>
+									</div>
+									
 									<div class="col-md-4 mb-5">
 										<a href="https://esenin-group.ru" target="_blank">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/site-portfolio/site-portfolio-esenine-group.webp" class="img-fluid mb-4 w-100" style="border-radius: 20px;">
@@ -752,26 +751,21 @@ if (isset($_SESSION['win'])) {
 									</div>
 									<div class="col-md-4 mb-5">
 										<a href="https://gyard.ru" target="_blank">
-											<img src="<?php echo get_template_directory_uri(); ?>/img/site-portfolio/site-portfolio-11.png"
-												class="img-fluid mb-4 w-100">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/site-portfolio/site-portfolio-11.png" class="img-fluid mb-4 w-100">
 										</a>
-										<h5 style="font-family: var(--font-family); font-size: 24px; color: #fff;">Строительство коттеджей
-										</h5>
+										<h5 style="font-family: var(--font-family); font-size: 24px; color: #fff;">Строительная компания «Грин ярд»</h5>
 									</div>
 									<div class="col-md-4 mb-5">
 										<a href="https://pokrov-petrovichi.ru" target="_blank">
-											<img src="<?php echo get_template_directory_uri(); ?>/img/site-portfolio/site-portfolio-12.png"
-												class="img-fluid mb-4 w-100">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/site-portfolio/site-portfolio-12.png" class="img-fluid mb-4 w-100">
 										</a>
 										<h5 style="font-family: var(--font-family); font-size: 24px; color: #fff;">Сайт храма</h5>
 									</div>
 									<div class="col-md-4 mb-5">
 										<a href="https://unistyle-spb.ru" target="_blank">
-											<img src="<?php echo get_template_directory_uri(); ?>/img/site-portfolio/site-portfolio-13.png"
-												class="img-fluid mb-4 w-100">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/site-portfolio/site-portfolio-13.png" class="img-fluid mb-4 w-100">
 										</a>
-										<h5 style="font-family: var(--font-family); font-size: 24px; color: #fff;">Производство и продажа
-											жалюзи</h5>
+										<h5 style="font-family: var(--font-family); font-size: 24px; color: #fff;">Производство и продажа жалюзи</h5>
 									</div>
 									<div class="col-md-4 mb-5">
 										<a href="https://site100.ru/wp-content/themes/site100theme/portfolio/kvartet" target="_blank">
@@ -797,8 +791,7 @@ if (isset($_SESSION['win'])) {
 									</div>
 									<div class="col-md-4 mb-5">
 										<a href="https://naers.ru" target="_blank">
-											<img src="<?php echo get_template_directory_uri(); ?>/img/site-portfolio/site-portfolio-25.png"
-												class="img-fluid mb-4 w-100">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/site-portfolio/site-portfolio-25.png" class="img-fluid mb-4 w-100">
 										</a>
 										<h5 style="font-family: var(--font-family); font-size: 24px; color: #fff;">Клининговая компания</h5>
 									</div>
