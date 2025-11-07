@@ -746,7 +746,7 @@ if (isset($_SESSION['win'])) {
 									</div>
 									<div class="col-md-4 mb-5">
 										<a href="https://esenin-group.ru" target="_blank">
-											<img src="<?php echo get_template_directory_uri(); ?>/img/site-portfolio/site-portfolio-esenine-group.webp" class="img-fluid mb-4 w-100">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/site-portfolio/site-portfolio-esenine-group.webp" class="img-fluid mb-4 w-100" style="border-radius: 20px;">
 										</a>
 										<h5 style="font-family: var(--font-family); font-size: 24px; color: #fff;">Строительная компания «Есенин-групп»</h5>
 									</div>
@@ -790,8 +790,7 @@ if (isset($_SESSION['win'])) {
 									</div>
 									<div class="col-md-4 mb-5">
 										<a href="https://трудовой-резерв.рф" target="_blank">
-											<img src="<?php echo get_template_directory_uri(); ?>/img/site-portfolio/site-portfolio-22.png"
-												class="img-fluid mb-4 w-100">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/site-portfolio/site-portfolio-22.png" class="img-fluid mb-4 w-100">
 										</a>
 										<h5 style="font-family: var(--font-family); font-size: 24px; color: #fff;">Автошкола на спецтехнику
 										</h5>
