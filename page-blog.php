@@ -399,15 +399,16 @@ if (isset($_SESSION['win'])) {
 							<?php
 							// параметры по умолчанию
 							$posts = get_posts(array(
-								'numberposts' => -1,
-								'category' => 0,
-								'orderby' => 'date',
-								'order' => 'ASC',
-								'include' => array(),
-								'exclude' => array(),
-								'meta_key' => '',
-								'meta_value' => '',
-								'post_type' => 'post',
+								'numberposts'      => -1,
+								'posts_per_page'   => 30, // Количество выводимых постов
+								'category'         => 0,
+								'orderby'          => 'date',
+								'order'            => 'ASC',
+								'include'          => array(),
+								'exclude'          => array(),
+								'meta_key'         => '',
+								'meta_value'       => '',
+								'post_type'        => 'post',
 								'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
 							));
 
