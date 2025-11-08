@@ -328,26 +328,34 @@ if (isset($_SESSION['win'])) {
         <!-- Title container -->
         <div id="title-container" class="container">
             <div class="row">
-                <div class="col-xl-10 col-lg-10 col-md-10"
-                    style="position: relative; padding-top: 30px; padding-bottom: 25px;">
-                    <h1 class="ps-0">Создание, продвижение<br class="d-none d-sm-block"> и поддержка сайтов</h1>
-                    <h5 class="mt-2 mt-sm-3">Частный веб-мастер. Опыт работы с 2016 года.</h5>
+                <div class="col-xl-10 col-lg-10 col-md-10" style="position: relative; padding-top: 30px; padding-bottom: 25px;">
+                    <h1 class="ps-0">Калькулятор сайта</h1>
+                    <h5 class="mt-2 mt-sm-3">Рассчитать стоимость сайта</h5>
                 </div>
             </div>
-            <div class="row">
+            <!--div class="row">
                 <div class="col-lg-6 col-md-8 w-100">
-                    <!--div id="description">Разработаю продающий сайт. Настрою контекстную рекламу. Подключу CRM, онлайн оплату, сервис доставки. Создам систему привлечения клиентов в Ваш бизнес.</div-->
-                    <!--div id="description">Выявлю потребности Ваших клиентов, проанализирую конкурентов, создам продающий контент и уникальный дизайн, настрою контекстную рекламу, продвину в поиске, приведу новых клиентов в Ваш бизнес, буду поддерживать и улучшать Ваш проект.</div-->
-                    <div id="description">Выявлю потребности Ваших клиентов. Создам продающий сайт или улучшу имеющийся. Настрою
-                        контекстную рекламу. Продвину в поиске. Приведу больше клиентов в Ваш бизнес. Буду поддерживать и улучшать
-                        Ваш сайт или интернет-магазин.</div>
-                    <a href="#" class="d-inline-block home-btn" data-bs-toggle="modal" data-bs-target="#callbackModal">Оставить
-                        заявку</a>
+                    <div id="description">Выявлю потребности Ваших клиентов. Создам продающий сайт или улучшу имеющийся. Настрою контекстную рекламу. Продвину в поиске. Приведу больше клиентов в Ваш бизнес. Буду поддерживать и улучшать Ваш сайт или интернет-магазин.</div>
+                    <a href="#" class="d-inline-block home-btn" data-bs-toggle="modal" data-bs-target="#callbackModal">Оставить заявку</a>
+                </div>
+            </div-->
+        </div>
+    </section>
+    <!-- End Hero section -->
+
+    
+    <!-- Section calculator -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+					<p>Кол-во секций для дизайна:</p>
+					<p><input type="text" id="siteDesignSection"></p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End Hero section -->
+    <!-- End section calculator -->
 
 
 	<!-- FOOTER -->
