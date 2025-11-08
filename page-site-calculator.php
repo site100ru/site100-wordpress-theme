@@ -359,8 +359,10 @@ if ( isset( $_SESSION['win'] ) ) {
                     <p>Стоимость сайта: <div id="siteResult"></div></p>
 
                     <script>
-			            function calculate() {
+			            function siteCalculate() {
+                            // Принимает занчание из siteDesignSection
                             let siteDesignSection = document.getElementById('siteDesignSection').value;
+                            // Выводим результат
                             document.getElementById('siteResult').innerHTML = siteDesignSection;
                         }
                     </script>
