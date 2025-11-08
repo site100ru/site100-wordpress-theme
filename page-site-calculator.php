@@ -1,13 +1,13 @@
+<?php
+
 /**
  * Template Name: Калькулятор сайта
  * Template Post Type: page
  */
 
 
-<?php
-
-if (isset($_SESSION['win'])) {
-	unset($_SESSION['win']);
+if ( isset( $_SESSION['win'] ) ) {
+	unset( $_SESSION['win'] );
 	$display = "block";
 } else {
 	$display = "none";
@@ -345,12 +345,25 @@ if (isset($_SESSION['win'])) {
 
     
     <!-- Section calculator -->
-    <section>
+    <section class="bg-white">
         <div class="container">
             <div class="row">
                 <div class="col">
 					<p>Кол-во секций для дизайна:</p>
 					<p><input type="text" id="siteDesignSection"></p>
+                    <p>Кол-во секций для верстки:</p>
+					<p><input type="text" id="siteMarkupSection"></p>
+                    <p>Кол-во секций для CMS:</p>
+					<p><input type="text" id="siteCMSSection"></p>
+                    <p><input type="button" id="siteResultButton" onclick="siteCalculate();"></p>
+                    <p>Стоимость сайта: <div id="siteResult"></div></p>
+
+                    <script>
+			            function calculate() {
+                            let siteDesignSection = document.getElementById('siteDesignSection').value;
+                            document.getElementById('siteResult').innerHTML = siteDesignSection;
+                        }
+                    </script>
                 </div>
             </div>
         </div>
