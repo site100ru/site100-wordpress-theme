@@ -419,7 +419,7 @@ if (isset($_SESSION['win'])) {
 								$args = array(
 									'category__in' => $category_ids,
 									'post__not_in' => array(get_the_ID()),
-									'posts_per_page' => 18,
+									'posts_per_page' => 30,
 									'orderby' => 'rand'
 								);
 
