@@ -469,33 +469,61 @@ function custom_robots_txt($output) {
 
 
 /*** ДЕЛАЕМ ВОЗМОЖНЫМ ЗАГРУЗИТЬ FAVICON IN SVG ***/
-// Разрешить загрузку SVG файлов
-add_filter('upload_mimes', 'allow_svg_upload');
-function allow_svg_upload($mimes) {
-    $mimes['svg'] = 'image/svg+xml';
-    $mimes['svgz'] = 'image/svg+xml';
-    return $mimes;
+// Полное отключение обрезки для SVG файлов
+add_filter('wp_handle_upload_prefilter', 'disable_crop_for_svg');
+
+function disable_crop_for_svg($file) {
+    if ($file['type'] === 'image/svg+xml') {
+        // Убираем параметры обрезки из запроса
+        add_filter('wp_doing_ajax', '__return_false');
+        add_filter('wp_redirect', '__return_false');
+    }
+    return $file;
 }
 
-// Исправление MIME типа для SVG
-add_filter('wp_check_filetype_and_ext', 'fix_svg_mime_type', 10, 5);
-function fix_svg_mime_type($data, $file, $filename, $mimes, $real_mime = '') {
-    if (strpos($filename, '.svg') !== false) {
-        $data['ext'] = 'svg';
-        $data['type'] = 'image/svg+xml';
+// Отключаем редактор изображений для SVG
+add_filter('image_downsize', 'disable_svg_resize', 10, 3);
+
+function disable_svg_resize($out, $id, $size) {
+    $mime = get_post_mime_type($id);
+    if ($mime === 'image/svg+xml') {
+        return false;
     }
-    return $data;
+    return $out;
 }
 
-// Обеспечиваем корректное отображение SVG в медиатеке
-add_action('admin_head', 'svg_support_style');
-function svg_support_style() {
-    echo '<style>
-    .attachment .thumbnail img[src$=".svg"],
-    .attachment-details .thumbnail img[src$=".svg"] {
-        width: 100% !important;
-        height: auto !important;
+// Запрещаем создание миниатюр для SVG
+add_filter('intermediate_image_sizes_advanced', 'disable_svg_thumbnails');
+
+function disable_svg_thumbnails($sizes) {
+    if (isset($_POST['post_id'])) {
+        $mime = get_post_mime_type($_POST['post_id']);
+        if ($mime === 'image/svg+xml') {
+            return array();
+        }
     }
-    </style>';
+    return $sizes;
+}
+
+// Дополнительно: перехватываем выбор файла в медиатеке
+add_filter('attachment_fields_to_edit', 'modify_svg_attachment_fields', 10, 2);
+
+function modify_svg_attachment_fields($form_fields, $post) {
+    if ($post->post_mime_type === 'image/svg+xml') {
+        // Скрываем кнопку обрезки через JS
+        add_action('admin_footer', 'hide_crop_button_for_svg');
+    }
+    return $form_fields;
+}
+
+function hide_crop_button_for_svg() {
+    echo '<script>
+    jQuery(document).ready(function($) {
+        if ($("select.attachment-filters").length) {
+            $(".media-toolbar-primary .button").hide();
+            $(".media-toolbar-primary").append("<button type=\"button\" class=\"button button-primary media-button-select\">Выбрать</button>");
+        }
+    });
+    </script>';
 }
 /*** END ДЕЛАЕМ ВОЗМОЖНЫМ ЗАГРУЗИТЬ FAVICON IN SVG ***/
