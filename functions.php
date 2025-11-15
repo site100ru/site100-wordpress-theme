@@ -465,3 +465,37 @@ function custom_robots_txt($output) {
     return $output;
 }
 /*** END ДЕЛАЕМ ФАЙЛ ROBOTS.TXT ***/
+
+
+
+/*** ДЕЛАЕМ ВОЗМОЖНЫМ ЗАГРУЗИТЬ FAVICON IN SVG ***/
+// Разрешить загрузку SVG файлов
+add_filter('upload_mimes', 'allow_svg_upload');
+function allow_svg_upload($mimes) {
+    $mimes['svg'] = 'image/svg+xml';
+    $mimes['svgz'] = 'image/svg+xml';
+    return $mimes;
+}
+
+// Исправление MIME типа для SVG
+add_filter('wp_check_filetype_and_ext', 'fix_svg_mime_type', 10, 5);
+function fix_svg_mime_type($data, $file, $filename, $mimes, $real_mime = '') {
+    if (strpos($filename, '.svg') !== false) {
+        $data['ext'] = 'svg';
+        $data['type'] = 'image/svg+xml';
+    }
+    return $data;
+}
+
+// Обеспечиваем корректное отображение SVG в медиатеке
+add_action('admin_head', 'svg_support_style');
+function svg_support_style() {
+    echo '<style>
+    .attachment .thumbnail img[src$=".svg"],
+    .attachment-details .thumbnail img[src$=".svg"] {
+        width: 100% !important;
+        height: auto !important;
+    }
+    </style>';
+}
+/*** END ДЕЛАЕМ ВОЗМОЖНЫМ ЗАГРУЗИТЬ FAVICON IN SVG ***/
