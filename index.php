@@ -33,6 +33,9 @@ if (isset($_SESSION['win'])) {
 	<meta property="og:site_name" content="Создание, продвижение и поддержка сайтов в Москве и МО" />
 	<meta property="og:title" content="Создание, продвижение и поддержка сайтов в Москве и МО" />
 	<meta property="og:description" content="Создание сайтов, продвижение сайтов, контекстная реклама, сео-продвижение, поддержка сайтов" />
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/ico/favicon.svg" type="image/x-icon" id="favicon">
 	
 	<!-- Bootstrap CSS -->
 	<link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css" rel="stylesheet">
