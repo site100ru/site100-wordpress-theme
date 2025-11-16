@@ -462,7 +462,7 @@ add_action('customize_register', 'mytheme_customize_register');
 add_filter('robots_txt', 'custom_robots_txt');
 function custom_robots_txt($output) {
     $output = "User-agent: *\n";
-    $output .= "Disallow: https://site100.ru/furniture*\n";
+    $output .= "Disallow: /site100.ru/furniture*\n";
     return $output;
 }
 /*** END ДЕЛАЕМ ФАЙЛ ROBOTS.TXT ***/
