@@ -464,7 +464,12 @@ function custom_robots_txt($output) {
     $output = "User-agent: *\n";
     $output .= "Disallow: /furniture*\n";
     $output .= "Disallow: /frezer*\n";
-    $output .= "Disallow: /shop*";
+    $output .= "Disallow: /shop*\n";
+    $output .= "Disallow: /blog/uncategorized*\n";
+    $output .= "Disallow: /blog/author*\n";
+    $output .= "Disallow: /%D1%84%D0%B8%D0%B3%D0%BC%D0%B0/* #/фигма/\n";
+    $output .= "Disallow: /?\n";
+    $output .= "Disallow: /kitchen/*";
     return $output;
 }
 /*** END ДЕЛАЕМ ФАЙЛ ROBOTS.TXT ***/
