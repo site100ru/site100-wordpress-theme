@@ -463,6 +463,7 @@ add_filter('robots_txt', 'custom_robots_txt');
 function custom_robots_txt($output) {
     $output = "User-agent: *\n";
     $output .= "Disallow: /furniture*\n";
+    $output .= "Disallow: /frezer*";
     return $output;
 }
 /*** END ДЕЛАЕМ ФАЙЛ ROBOTS.TXT ***/
