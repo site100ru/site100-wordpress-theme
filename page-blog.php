@@ -349,7 +349,7 @@ if (isset($_SESSION['win'])) {
                 
 		</nav>
 		<div class="container"> <!-- container/container-fluid -->
-			<div class="row justify-content-center align-items-center" style="padding-top: 110px; padding-bottom: 60px">
+			<div class="row justify-content-center align-items-center mini-hero">
 				<!-- min-height: 50vh; -->
 				<div class="col text-start"> <!-- text-center -->
 					<!-- Title -->

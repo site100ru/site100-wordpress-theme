@@ -1021,3 +1021,7 @@ form .form-label {
         box-shadow: 0px 20px 16px -40px #202020;
     }
 }
+
+#blog-header-2 .mini-hero {
+    padding-block: 80px;
+}

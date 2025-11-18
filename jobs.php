@@ -139,7 +139,7 @@ if (isset($_SESSION['win'])) {
 						<div class="navbar-nav">
 							<ul class="header-menu nav justify-content-center">
 								<li class="nav-item">
-									<a class="nav-link" aria-current="page" href="http://site100.local/" data-target="main-page">Главная</a>
+									<a class="nav-link" aria-current="page" href="/" data-target="main-page">Главная</a>
 								</li>
 
 								<li class="nav-item d-none d-lg-inline">
@@ -239,7 +239,7 @@ if (isset($_SESSION['win'])) {
 							<div class="nav-item dropdown">
 								<ul class="header-menu nav flex-column flex-lg-row justify-content-center">
 									<li class="nav-item">
-										<a class="nav-link" aria-current="page" href="http://site100.local/" data-target="main-page">Главная</a>
+										<a class="nav-link" aria-current="page" href="/" data-target="main-page">Главная</a>
 									</li>
 
 									<li class="nav-item d-none d-lg-inline">
@@ -261,7 +261,7 @@ if (isset($_SESSION['win'])) {
 									</li>
 
 									<li class="nav-item">
-										<a class="nav-link" href="http://site100.local/blog/" data-target="blog-page">Блог</a>
+										<a class="nav-link" href="/blog/" data-target="blog-page">Блог</a>
 									</li>
 
 									<li class="nav-item d-none d-lg-inline">

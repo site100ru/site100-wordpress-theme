@@ -375,7 +375,7 @@ if (isset($_SESSION['win'])) {
 
 		<!-- Title Section -->
 		<div class="container">
-			<div class="row justify-content-center align-items-center" style="padding-top: 110px; padding-bottom: 60px">
+			<div class="row justify-content-center align-items-center mini-hero">
 				<div class="col text-center">
 					<?php if (have_posts()):
 						while (have_posts()):
