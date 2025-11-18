@@ -131,7 +131,7 @@ if (isset($_SESSION['win'])) {
 				<div class="container d-flex justify-content-between align-items-center" style="z-index: 1000;">
 					<a class="navbar-brand logo me-1" href="https://site100.ru">site<span class="text-danger">100</span>.ru</a>
 					<div class="add-info-block d-flex flex-column align-items-center d-lg-none py-1 me-2 me-sm-5">
-						<a class="link-itemphone-link-mobile" href="tel: +79307878068">+7 (930) 78-78-0-68</a>
+						<a class="link-item fw-bold phone-link" href="tel: +79307878068">+7 (930) 78-78-0-68</a>
 						<div class="d-flex navbar-brand fw-normal me-1 align-items-center py-1">
 							<svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path
@@ -149,9 +149,10 @@ if (isset($_SESSION['win'])) {
 				<div class="collapse navbar-collapse w-100 justify-content-end" id="adapt-menu-collapse">
 					<div class="adapt-menu d-flex pb-3 px-3 px-sm-5 pb-lg-0 px-lg-0 justify-content-lg-end">
 						<div class="navbar-nav">
-							<ul class="footer-menu nav justify-content-center">
+							<ul class="header-menu nav justify-content-center">
 								<li class="nav-item">
-									<a class="nav-link " href="<?php echo site_url('/'); ?>" data-target="main-page">Главная</a>
+									<a class="nav-link" aria-current="page" href="<?php echo site_url('/'); ?>"
+										data-target="main-page">Главная</a>
 								</li>
 
 								<li class="nav-item d-none d-lg-inline">
@@ -159,18 +160,18 @@ if (isset($_SESSION['win'])) {
 								</li>
 
 								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle arrow-element active" href="#" role="button"
-										data-bs-toggle="dropdown" aria-expanded="false" data-target="services-dropdown">
-										услуги
+									<a class="nav-link dropdown-toggle arrow-element active" href="#" role="button" data-bs-toggle="dropdown"
+										aria-expanded="false" data-target="services-dropdown">
+										Услуги
 									</a>
 									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="/#sp-create" data-target="service-web">создание сайтов</a></li>
-										<li><a class="dropdown-item" href="/#sp-promotion" data-target="service-promotion">продвижение
+										<li><a class="dropdown-item" href="#sp-create" data-target="service-web">создание сайтов</a></li>
+										<li><a class="dropdown-item" href="#sp-promotion" data-target="service-promotion">продвижение
 												сайтов</a></li>
-										<li><a class="dropdown-item" href="/#sp-support" data-target="service-support">поддержка сайтов</a>
+										<li><a class="dropdown-item" href="#sp-support" data-target="service-support">поддержка сайтов</a>
 										</li>
-										<li><a class="dropdown-item active" href="https://site100.ru/kitchen/" data-target="service-kitchen">клиенты на
-												корпусную мебель</a></li>
+										<li><a class="dropdown-item" href="https://site100.ru/kitchen/" data-target="service-kitchen">клиенты на корпусную
+												мебель</a></li>
 									</ul>
 								</li>
 
@@ -182,8 +183,16 @@ if (isset($_SESSION['win'])) {
 									<img class="nav-link" src="<?php echo get_template_directory_uri(); ?>/img/ico/menu-point.svg" />
 								</li>
 
+                                <li class="nav-item">
+									<a class="nav-link" href="<?php echo site_url('/jobs/'); ?>" data-target="blog-page">Вакансии</a>
+								</li>
+
+								<li class="nav-item d-none d-lg-inline">
+									<img class="nav-link" src="<?php echo get_template_directory_uri(); ?>/img/ico/menu-point.svg" />
+								</li>
+
 								<li class="nav-item">
-									<a class="nav-link last" href="#contacts-sp" data-target="contacts-page">КОНТАКТЫ</a>
+									<a class="nav-link last" href="#contacts-sp" data-target="contacts-page">Контакты</a>
 								</li>
 							</ul>
 							<div class="navbar-brand d-lg-none me-5 d-flex align-items-center">
@@ -213,14 +222,13 @@ if (isset($_SESSION['win'])) {
 								<span class="f-menu ms-1">Ежедневно c 9:00 до 21:00</span>
 							</div>
 							<div class="d-flex d-lg-none justify-content-start">
-								<a class="nav-link ico-button px-2" href="https://wa.me/79307878068?web=1&app_absent=1&"
-									target="_blank">
+								<a class="nav-link ico-button px-2" href="https://wa.me/79307878068?web=1&amp;app_absent=1&amp;" target="_blank">
 									<img src="<?php echo get_template_directory_uri(); ?>/img/ico/whatsapp-ico.svg">
 								</a>
 								<a class="nav-link ico-button" href="https://t.me/79307878068" target="_blank">
 									<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg">
 								</a>
-                                 <!-- <a class="nav-link ico-button" href="https://t.me/79307878068" target="_blank">
+                                <!-- <a class="nav-link ico-button" href="https://t.me/79307878068" target="_blank">
 									<img src="<?php echo get_template_directory_uri(); ?>/img/ico/max.svg">
 								</a> -->
 							</div>
@@ -231,7 +239,7 @@ if (isset($_SESSION['win'])) {
 		</nav>
 		<nav
 			class="fixed-menu header-nav-bottom navbar navbar-expand-lg navbar-light start-0 d-flex align-items-center justify-content-lg-between justify-content-around mt-0 py-1">
-			<div class="container-fluid container-lg px-0 d-flex">
+			<div class="container-fluid container-lg px-0 d-flex bg-white">
 				<div class="container d-flex justify-content-between align-items-center">
 					<a class="navbar-brand logo me-1" href="https://site100.ru">site<span class="text-danger">100</span>.ru</a>
 					<div class="add-info-block d-flex flex-column align-items-center d-lg-none py-1 me-2 me-sm-5">
@@ -250,81 +258,91 @@ if (isset($_SESSION['win'])) {
 						<span class="navbar-toggler-icon"></span>
 					</button>
 				</div>
-				<div class="collapse navbar-collapse justify-content-end w-100" id="adapt-menu-collapse">
-					<div class="adapt-menu d-flex pb-3 px-3 px-sm-5 pb-lg-0 px-lg-0 justify-content-lg-end">
+            
+				<div class="collapse navbar-collapse justify-content-end w-100  bg-white container" id="adapt-menu-collapse">
+					<div class="adapt-menu d-flex pb-3 5 pb-lg-0 px-lg-0 justify-content-lg-end">
 						<div class="navbar-nav">
-							<ul class="footer-menu nav justify-content-center flex-column flex-lg-row">
-								<li class="nav-item">
-									<a class="nav-link " href="<?php echo site_url('/'); ?>" data-target="main-page">Главная</a>
-								</li>
+							<div class="nav-item dropdown">
+								<ul class="header-menu nav flex-column flex-lg-row justify-content-center">
+									<li class="nav-item">
+										<a class="nav-link " aria-current="page" href="<?php echo site_url('/'); ?>"
+											data-target="main-page">Главная</a>
+									</li>
 
-								<li class="nav-item d-none d-lg-inline">
-									<img class="nav-link" src="<?php echo get_template_directory_uri(); ?>/img/ico/menu-point.svg" />
-								</li>
+									<li class="nav-item d-none d-lg-inline">
+										<img class="nav-link" src="<?php echo get_template_directory_uri(); ?>/img/ico/menu-point.svg" />
+									</li>
 
-								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle arrow-element active" href="#" role="button"
-										data-bs-toggle="dropdown" aria-expanded="false" data-target="services-dropdown">
-										услуги
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle arrow-element active" href="#" role="button" data-bs-toggle="dropdown"
+											aria-expanded="false" data-target="services-dropdown">
+											Услуги
+										</a>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#sp-create" data-target="service-web">Создание сайтов</a></li>
+											<li><a class="dropdown-item" href="#sp-promotion" data-target="service-promotion">Продвижение
+													сайтов</a></li>
+											<li><a class="dropdown-item" href="#sp-support" data-target="service-support">Поддержка сайтов</a>
+											</li>
+											<li><a class="dropdown-item" href="https://site100.ru/kitchen/" data-target="service-kitchen">Клиенты на корпусную мебель</a></li>
+										</ul>
+									</li>
+
+									<li class="nav-item">
+										<a class="nav-link" href="<?php echo site_url('/blog/'); ?>" data-target="blog-page">Блог</a>
+									</li>
+
+									<li class="nav-item d-none d-lg-inline">
+										<img class="nav-link" src="<?php echo get_template_directory_uri(); ?>/img/ico/menu-point.svg" />
+									</li>
+
+                                    <li class="nav-item">
+										<a class="nav-link" href="<?php echo site_url('/jobs/'); ?>" data-target="blog-page">Вакансии</a>
+									</li>
+
+									<li class="nav-item d-none d-lg-inline">
+										<img class="nav-link" src="<?php echo get_template_directory_uri(); ?>/img/ico/menu-point.svg" />
+									</li>
+
+									<li class="nav-item">
+										<a class="nav-link last" href="#contacts-sp" data-target="contacts-page">Контакты</a>
+									</li>
+								</ul>
+								<div class="navbar-brand d-lg-none me-5 d-flex align-items-center">
+									<svg width="10" height="13" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M13.1109 23.4607C15.5156 20.4435 21 13.1309 21 9.02335C21 4.04171 16.9688 0 12 0C7.03125 0 3 4.04171 3 9.02335C3 13.1309 8.48438 20.4435 10.8891 23.4607C11.4656 24.1798 12.5344 24.1798 13.1109 23.4607ZM12 6.01557C12.7956 6.01557 13.5587 6.33246 14.1213 6.89653C14.6839 7.4606 15 8.22564 15 9.02335C15 9.82106 14.6839 10.5861 14.1213 11.1502C13.5587 11.7142 12.7956 12.0311 12 12.0311C11.2044 12.0311 10.4413 11.7142 9.87868 11.1502C9.31607 10.5861 9 9.82106 9 9.02335C9 8.22564 9.31607 7.4606 9.87868 6.89653C10.4413 6.33246 11.2044 6.01557 12 6.01557Z"
+											fill="#DC3545" />
+									</svg>
+									<a class="link-item d-inline-block ms-1" href="">гор. Москва, ул. Митинская, д. 43</a>
+								</div>
+								<div class="fw-bold me-0 me-lg-5 d-lg-none text-start" style="height: 28px;">
+									<a class="link-item fw-bold d-lg-none text-start" href="tel: +79307878068">8 (930) 787-80-68</a>
+								</div>
+								<div class="d-flex d-lg-none navbar-brand fw-normal me-1 align-items-center py-1 mb-2">
+									<svg width="10" height="10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M21.75 12C21.75 14.5859 20.7228 17.0658 18.8943 18.8943C17.0658 20.7228 14.5859 21.75 12 21.75C9.41414 21.75 6.93419 20.7228 5.10571 18.8943C3.27723 17.0658 2.25 14.5859 2.25 12C2.25 9.41414 3.27723 6.93419 5.10571 5.10571C6.93419 3.27723 9.41414 2.25 12 2.25C14.5859 2.25 17.0658 3.27723 18.8943 5.10571C20.7228 6.93419 21.75 9.41414 21.75 12ZM0 12C0 15.1826 1.26428 18.2348 3.51472 20.4853C5.76516 22.7357 8.8174 24 12 24C15.1826 24 18.2348 22.7357 20.4853 20.4853C22.7357 18.2348 24 15.1826 24 12C24 8.8174 22.7357 5.76516 20.4853 3.51472C18.2348 1.26428 15.1826 0 12 0C8.8174 0 5.76516 1.26428 3.51472 3.51472C1.26428 5.76516 0 8.8174 0 12ZM10.875 5.625V12C10.875 12.375 11.0625 12.7266 11.3766 12.9375L15.8766 15.9375C16.3922 16.2844 17.0906 16.1437 17.4375 15.6234C17.7844 15.1031 17.6437 14.4094 17.1234 14.0625L13.125 11.4V5.625C13.125 5.00156 12.6234 4.5 12 4.5C11.3766 4.5 10.875 5.00156 10.875 5.625Z"
+											fill="#DC3545" />
+									</svg>
+									<span class="f-menu ms-1">Ежедневно c 9:00 до 21:00</span>
+								</div>
+								<div class="d-flex d-lg-none justify-content-start">
+									<a class="nav-link ico-button px-2" href="https://wa.me/79307878068?web=1&amp;app_absent=1&amp;" target="_blank">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/ico/whatsapp-ico.svg">
 									</a>
-									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="/#sp-create" data-target="service-web">создание сайтов</a></li>
-										<li><a class="dropdown-item" href="/#sp-promotion" data-target="service-promotion">продвижение
-												сайтов</a></li>
-										<li><a class="dropdown-item" href="/#sp-support" data-target="service-support">поддержка сайтов</a>
-										</li>
-										<li><a class="dropdown-item active" href="https://site100.ru/kitchen/" data-target="service-kitchen">клиенты на
-												корпусную мебель</a></li>
-									</ul>
-								</li>
-
-								<li class="nav-item">
-									<a class="nav-link" href="<?php echo site_url('/blog/'); ?>" data-target="blog-page">Блог</a>
-								</li>
-
-								<li class="nav-item d-none d-lg-inline">
-									<img class="nav-link" src="<?php echo get_template_directory_uri(); ?>/img/ico/menu-point.svg" />
-								</li>
-
-								<li class="nav-item">
-									<a class="nav-link last" href="#contacts-sp" data-target="contacts-page">КОНТАКТЫ</a>
-								</li>
-							</ul>
-							<div class="navbar-brand d-lg-none me-5 d-flex align-items-center">
-								<svg width="10" height="13" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M13.1109 23.4607C15.5156 20.4435 21 13.1309 21 9.02335C21 4.04171 16.9688 0 12 0C7.03125 0 3 4.04171 3 9.02335C3 13.1309 8.48438 20.4435 10.8891 23.4607C11.4656 24.1798 12.5344 24.1798 13.1109 23.4607ZM12 6.01557C12.7956 6.01557 13.5587 6.33246 14.1213 6.89653C14.6839 7.4606 15 8.22564 15 9.02335C15 9.82106 14.6839 10.5861 14.1213 11.1502C13.5587 11.7142 12.7956 12.0311 12 12.0311C11.2044 12.0311 10.4413 11.7142 9.87868 11.1502C9.31607 10.5861 9 9.82106 9 9.02335C9 8.22564 9.31607 7.4606 9.87868 6.89653C10.4413 6.33246 11.2044 6.01557 12 6.01557Z"
-										fill="#DC3545" />
-								</svg>
-								<a class="link-item d-inline-block ms-1" href="">гор. Москва, ул. Митинская, д. 43</a>
-							</div>
-							<div class="me-0 d-lg-none text-start" style="height: 28px;">
-								<a class="link-item fw-bold d-lg-none text-start" href="tel: +79307878068">8 (930) 787-80-68</a>
-							</div>
-							<div class="d-flex d-lg-none navbar-brand fw-normal me-1 align-items-center py-1 mb-2">
-								<svg width="10" height="10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M21.75 12C21.75 14.5859 20.7228 17.0658 18.8943 18.8943C17.0658 20.7228 14.5859 21.75 12 21.75C9.41414 21.75 6.93419 20.7228 5.10571 18.8943C3.27723 17.0658 2.25 14.5859 2.25 12C2.25 9.41414 3.27723 6.93419 5.10571 5.10571C6.93419 3.27723 9.41414 2.25 12 2.25C14.5859 2.25 17.0658 3.27723 18.8943 5.10571C20.7228 6.93419 21.75 9.41414 21.75 12ZM0 12C0 15.1826 1.26428 18.2348 3.51472 20.4853C5.76516 22.7357 8.8174 24 12 24C15.1826 24 18.2348 22.7357 20.4853 20.4853C22.7357 18.2348 24 15.1826 24 12C24 8.8174 22.7357 5.76516 20.4853 3.51472C18.2348 1.26428 15.1826 0 12 0C8.8174 0 5.76516 1.26428 3.51472 3.51472C1.26428 5.76516 0 8.8174 0 12ZM10.875 5.625V12C10.875 12.375 11.0625 12.7266 11.3766 12.9375L15.8766 15.9375C16.3922 16.2844 17.0906 16.1437 17.4375 15.6234C17.7844 15.1031 17.6437 14.4094 17.1234 14.0625L13.125 11.4V5.625C13.125 5.00156 12.6234 4.5 12 4.5C11.3766 4.5 10.875 5.00156 10.875 5.625Z"
-										fill="#DC3545" />
-								</svg>
-								<span class="f-menu ms-1">Ежедневно c 9:00 до 21:00</span>
-							</div>
-							<div class="d-flex d-lg-none justify-content-start">
-								<a class="nav-link ico-button px-2" href="https://wa.me/79307878068?web=1&app_absent=1&"
-									target="_blank">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/ico/whatsapp-ico.svg">
-								</a>
-								<a class="nav-link ico-button ms-3" href="https://t.me/79307878068" target="_blank">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg">
-								</a>
-                                 <!-- <a class="nav-link ico-button ms-3" href="https://t.me/79307878068" target="_blank">
+									<a class="nav-link ico-button ms-3" href="https://t.me/79307878068" target="_blank">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg">
+									</a>
+                                    <!-- <a class="nav-link ico-button ms-3" href="https://t.me/79307878068" target="_blank">
                                         <img src="<?php echo get_template_directory_uri(); ?>/img/ico/max.svg">
                                     </a> -->
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+                
 		</nav>
 	</header>
 
