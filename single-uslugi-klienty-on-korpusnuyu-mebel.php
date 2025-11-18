@@ -114,6 +114,9 @@ if (isset($_SESSION['win'])) {
 							<a class="nav-link ico-button px-2" href="https://wa.me/79307878068?web=1&app_absent=1&" target="_blank">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/whatsapp-ico.svg">
 							</a>
+                             <!-- <a class="nav-link ico-button px-2" href="https://wa.me/79307878068?web=1&amp;app_absent=1&amp;" target="_blank">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/max.svg">
+							</a> -->
 						</div>
 					</div>
 				</div>
@@ -166,7 +169,7 @@ if (isset($_SESSION['win'])) {
 												сайтов</a></li>
 										<li><a class="dropdown-item" href="/#sp-support" data-target="service-support">поддержка сайтов</a>
 										</li>
-										<li><a class="dropdown-item active" href="https://site100.ru/uslugi/klienty-na-korpusnuyu-mebel/" data-target="service-kitchen">клиенты на
+										<li><a class="dropdown-item active" href="https://site100.ru/kitchen/" data-target="service-kitchen">клиенты на
 												корпусную мебель</a></li>
 									</ul>
 								</li>
@@ -217,6 +220,9 @@ if (isset($_SESSION['win'])) {
 								<a class="nav-link ico-button" href="https://t.me/79307878068" target="_blank">
 									<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg">
 								</a>
+                                 <!-- <a class="nav-link ico-button" href="https://t.me/79307878068" target="_blank">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/ico/max.svg">
+								</a> -->
 							</div>
 						</div>
 					</div>
@@ -267,7 +273,7 @@ if (isset($_SESSION['win'])) {
 												сайтов</a></li>
 										<li><a class="dropdown-item" href="/#sp-support" data-target="service-support">поддержка сайтов</a>
 										</li>
-										<li><a class="dropdown-item active" href="https://site100.ru/uslugi/klienty-na-korpusnuyu-mebel/" data-target="service-kitchen">клиенты на
+										<li><a class="dropdown-item active" href="https://site100.ru/kitchen/" data-target="service-kitchen">клиенты на
 												корпусную мебель</a></li>
 									</ul>
 								</li>
@@ -311,6 +317,9 @@ if (isset($_SESSION['win'])) {
 								<a class="nav-link ico-button ms-3" href="https://t.me/79307878068" target="_blank">
 									<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg">
 								</a>
+                                 <!-- <a class="nav-link ico-button ms-3" href="https://t.me/79307878068" target="_blank">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/ico/max.svg">
+                                    </a> -->
 							</div>
 						</div>
 					</div>
@@ -987,11 +996,16 @@ if (isset($_SESSION['win'])) {
 									<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg">
 								</a>
 							</li>
-							<li class="nav-item">
+							<!-- <li class="nav-item">
 								<a class="nav-link ico-button px-2" href="https://viber.me/79307878068" target="_blank">
 									<img src="<?php echo get_template_directory_uri(); ?>/img/ico/viber-ico.svg">
 								</a>
-							</li>
+							</li> -->
+                            <!-- <li class="nav-item">
+                            <a class="nav-link ico-button px-3" href="https://t.me/79307878068" target="_blank">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/ico/max.svg">
+                            </a>
+                        </li> -->
 						</ul>
 					</div>
 				</div>
@@ -1028,7 +1042,7 @@ if (isset($_SESSION['win'])) {
 								<li><a class="dropdown-item" href="/#sp-promotion" data-target="service-promotion">продвижение
 										сайтов</a></li>
 								<li><a class="dropdown-item" href="/#sp-support" data-target="service-support">поддержка сайтов</a></li>
-								<li><a class="dropdown-item active" href="https://site100.ru/uslugi/klienty-na-korpusnuyu-mebel/" data-target="service-kitchen">клиенты на корпусную
+								<li><a class="dropdown-item active" href="https://site100.ru/kitchen/" data-target="service-kitchen">клиенты на корпусную
 										мебель</a></li>
 							</ul>
 						</li>
@@ -1124,6 +1138,11 @@ if (isset($_SESSION['win'])) {
 								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg">
 							</a>
 						</li>
+                          <!-- <li class="nav-item">
+                            <a class="nav-link ico-button px-3" href="https://t.me/79307878068" target="_blank">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/ico/max.svg">
+                            </a>
+                        </li> -->
 					</ul>
 				</div>
 			</div>
@@ -1214,6 +1233,12 @@ if (isset($_SESSION['win'])) {
 								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg">
 							</a>
 						</li>
+
+                         <!-- <li class="nav-item">
+                            <a class="nav-link ico-button px-2" href="https://t.me/79307878068" target="_blank">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/ico/max.svg">
+                            </a>
+                        </li> -->
 					</ul>
 					<div class="row">
 						<div class="col-6">
@@ -1237,7 +1262,7 @@ if (isset($_SESSION['win'])) {
 										<li><a class="dropdown-item" href="#sp-create">создание сайтов</a></li>
 										<li><a class="dropdown-item" href="#sp-promotion">продвижение сайтов</a></li>
 										<li><a class="dropdown-item" href="#sp-support">поддержка сайтов</a></li>
-										<li><a class="dropdown-item" href="https://site100.ru/uslugi/klienty-na-korpusnuyu-mebel/">клиенты на корпусную мебель</a></li>
+										<li><a class="dropdown-item" href="https://site100.ru/kitchen/">клиенты на корпусную мебель</a></li>
 									</ul>
 								</li>
 								<li class="nav-item">

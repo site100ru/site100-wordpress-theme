@@ -50,6 +50,10 @@ if (isset($_SESSION['win'])) {
         <!-- Код счетчика в (head) -->
         <?php echo $counter_head; ?>
     <?php endif; ?>
+
+    <style>
+        a {word-break: break-all;}
+    </style>
 	
 </head>
 
@@ -113,6 +117,9 @@ if (isset($_SESSION['win'])) {
 								target="_blank">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/whatsapp-ico.svg">
 							</a>
+                             <!-- <a class="nav-link ico-button px-2" href="https://wa.me/79307878068?web=1&amp;app_absent=1&amp;" target="_blank">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/max.svg">
+							</a> -->
 						</div>
 					</div>
 				</div>
@@ -166,13 +173,21 @@ if (isset($_SESSION['win'])) {
 												сайтов</a></li>
 										<li><a class="dropdown-item" href="/#sp-support" data-target="service-support">поддержка сайтов</a>
 										</li>
-										<li><a class="dropdown-item" href="https://site100.ru/uslugi/klienty-na-korpusnuyu-mebel/" data-target="service-kitchen">клиенты на корпусную
+										<li><a class="dropdown-item" href="https://site100.ru/kitchen/" data-target="service-kitchen">клиенты на корпусную
 												мебель</a></li>
 									</ul>
 								</li>
 
 								<li class="nav-item">
 									<a class="nav-link active" href="<?php echo site_url('/blog/'); ?>" data-target="blog-page">Блог</a>
+								</li>
+
+								<li class="nav-item d-none d-lg-inline">
+									<img class="nav-link" src="<?php echo get_template_directory_uri(); ?>/img/ico/menu-point.svg" />
+								</li>
+
+                                <li class="nav-item">
+									<a class="nav-link" href="<?php echo site_url('/jobs/'); ?>" data-target="blog-page">Вакансии</a>
 								</li>
 
 								<li class="nav-item d-none d-lg-inline">
@@ -217,15 +232,18 @@ if (isset($_SESSION['win'])) {
 								<a class="nav-link ico-button" href="https://t.me/79307878068" target="_blank">
 									<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg">
 								</a>
+                                 <!-- <a class="nav-link ico-button" href="https://t.me/79307878068" target="_blank">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/ico/max.svg">
+								</a> -->
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</nav>
-		<nav
+	    <nav
 			class="fixed-menu header-nav-bottom navbar navbar-expand-lg navbar-light start-0 d-flex align-items-center justify-content-lg-between justify-content-around mt-0 py-1">
-			<div class="container-fluid container-lg px-0 d-flex">
+			<div class="container-fluid container-lg px-0 d-flex bg-white">
 				<div class="container d-flex justify-content-between align-items-center">
 					<a class="navbar-brand logo me-1" href="https://site100.ru">site<span class="text-danger">100</span>.ru</a>
 					<div class="add-info-block d-flex flex-column align-items-center d-lg-none py-1 me-2 me-sm-5">
@@ -244,13 +262,15 @@ if (isset($_SESSION['win'])) {
 						<span class="navbar-toggler-icon"></span>
 					</button>
 				</div>
-				<div class="collapse navbar-collapse justify-content-end w-100" id="adapt-menu-collapse">
-					<div class="adapt-menu d-flex pb-3 px-3 px-sm-5 pb-lg-0 px-lg-0 justify-content-lg-end">
+            
+				<div class="collapse navbar-collapse justify-content-end w-100  bg-white container" id="adapt-menu-collapse">
+					<div class="adapt-menu d-flex pb-3 5 pb-lg-0 px-lg-0 justify-content-lg-end">
 						<div class="navbar-nav">
 							<div class="nav-item dropdown">
-								<ul class="footer-menu nav flex-column flex-lg-row justify-content-center">
+								<ul class="header-menu nav flex-column flex-lg-row justify-content-center">
 									<li class="nav-item">
-										<a class="nav-link " href="<?php echo site_url('/'); ?>" data-target="main-page">Главная</a>
+										<a class="nav-link" aria-current="page" href="<?php echo site_url('/'); ?>"
+											data-target="main-page">Главная</a>
 									</li>
 
 									<li class="nav-item d-none d-lg-inline">
@@ -260,16 +280,15 @@ if (isset($_SESSION['win'])) {
 									<li class="nav-item dropdown">
 										<a class="nav-link dropdown-toggle arrow-element" href="#" role="button" data-bs-toggle="dropdown"
 											aria-expanded="false" data-target="services-dropdown">
-											услуги
+											Услуги
 										</a>
 										<ul class="dropdown-menu">
-											<li><a class="dropdown-item" href="/#sp-create" data-target="service-web">создание сайтов</a></li>
-											<li><a class="dropdown-item" href="/#sp-promotion" data-target="service-promotion">продвижение
+											<li><a class="dropdown-item" href="#sp-create" data-target="service-web">Создание сайтов</a></li>
+											<li><a class="dropdown-item" href="#sp-promotion" data-target="service-promotion">Продвижение
 													сайтов</a></li>
-											<li><a class="dropdown-item" href="/#sp-support" data-target="service-support">поддержка
-													сайтов</a></li>
-											<li><a class="dropdown-item" href="https://site100.ru/uslugi/klienty-na-korpusnuyu-mebel/" data-target="service-kitchen">клиенты на
-													корпусную мебель</a></li>
+											<li><a class="dropdown-item" href="#sp-support" data-target="service-support">Поддержка сайтов</a>
+											</li>
+											<li><a class="dropdown-item" href="https://site100.ru/kitchen/" data-target="service-kitchen">Клиенты на корпусную мебель</a></li>
 										</ul>
 									</li>
 
@@ -281,8 +300,16 @@ if (isset($_SESSION['win'])) {
 										<img class="nav-link" src="<?php echo get_template_directory_uri(); ?>/img/ico/menu-point.svg" />
 									</li>
 
+                                    <li class="nav-item">
+										<a class="nav-link" href="<?php echo site_url('/jobs/'); ?>" data-target="blog-page">Вакансии</a>
+									</li>
+
+									<li class="nav-item d-none d-lg-inline">
+										<img class="nav-link" src="<?php echo get_template_directory_uri(); ?>/img/ico/menu-point.svg" />
+									</li>
+
 									<li class="nav-item">
-										<a class="nav-link last" href="#contacts-sp" data-target="contacts-page">КОНТАКТЫ</a>
+										<a class="nav-link last" href="#contacts-sp" data-target="contacts-page">Контакты</a>
 									</li>
 								</ul>
 								<div class="navbar-brand d-lg-none me-5 d-flex align-items-center">
@@ -305,21 +332,24 @@ if (isset($_SESSION['win'])) {
 									<span class="f-menu ms-1">Ежедневно c 9:00 до 21:00</span>
 								</div>
 								<div class="d-flex d-lg-none justify-content-start">
-									<a class="nav-link ico-button ps-0 pe-2" href="https://wa.me/79307878068?web=1&app_absent=1&"
-										target="_blank">
+									<a class="nav-link ico-button px-2" href="https://wa.me/79307878068?web=1&amp;app_absent=1&amp;" target="_blank">
 										<img src="<?php echo get_template_directory_uri(); ?>/img/ico/whatsapp-ico.svg">
 									</a>
 									<a class="nav-link ico-button ms-3" href="https://t.me/79307878068" target="_blank">
 										<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg">
 									</a>
+                                    <!-- <a class="nav-link ico-button ms-3" href="https://t.me/79307878068" target="_blank">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/ico/max.svg">
+                                    </a> -->
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+                
 		</nav>
 		<div class="container"> <!-- container/container-fluid -->
-			<div class="row justify-content-center align-items-center" style="padding-block: 110px;">
+			<div class="row justify-content-center align-items-center" style="padding-top: 110px; padding-bottom: 60px">
 				<!-- min-height: 50vh; -->
 				<div class="col text-start"> <!-- text-center -->
 					<!-- Title -->
@@ -561,13 +591,21 @@ if (isset($_SESSION['win'])) {
 								<li><a class="dropdown-item" href="/#sp-promotion" data-target="service-promotion">продвижение
 										сайтов</a></li>
 								<li><a class="dropdown-item" href="/#sp-support" data-target="service-support">поддержка сайтов</a></li>
-								<li><a class="dropdown-item" href="https://site100.ru/uslugi/klienty-na-korpusnuyu-mebel/" data-target="service-kitchen">клиенты на корпусную
+								<li><a class="dropdown-item" href="https://site100.ru/kitchen/" data-target="service-kitchen">клиенты на корпусную
 										мебель</a></li>
 							</ul>
 						</li>
 
 						<li class="nav-item">
 							<a class="nav-link active" href="<?php echo site_url('/blog/'); ?>" data-target="blog-page">Блог</a>
+						</li>
+
+						<li class="nav-item d-none d-lg-inline">
+							<img class="nav-link" src="<?php echo get_template_directory_uri(); ?>/img/ico/menu-point.svg" />
+						</li>
+
+                        <li class="nav-item">
+							<a class="nav-link" href="<?php echo site_url('/jobs/'); ?>" data-target="blog-page">Вакансии</a>
 						</li>
 
 						<li class="nav-item d-none d-lg-inline">
@@ -657,6 +695,11 @@ if (isset($_SESSION['win'])) {
 								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg">
 							</a>
 						</li>
+                          <!-- <li class="nav-item">
+                            <a class="nav-link ico-button px-3" href="https://t.me/79307878068" target="_blank">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/ico/max.svg">
+                            </a>
+                        </li> -->
 					</ul>
 				</div>
 			</div>
@@ -747,6 +790,11 @@ if (isset($_SESSION['win'])) {
 								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg">
 							</a>
 						</li>
+                          <!-- <li class="nav-item">
+                            <a class="nav-link ico-button px-2" href="https://t.me/79307878068" target="_blank">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/ico/max.svg">
+                            </a>
+                        </li> -->
 					</ul>
 					<div class="row">
 						<div class="col-6">
@@ -759,27 +807,6 @@ if (isset($_SESSION['win'])) {
 								</li>
 							</ul>
 						</div>
-						<div class="col-6">
-							<ul class="nav flex-column">
-								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle arrow-element" href="#" role="button" data-bs-toggle="dropdown"
-										aria-expanded="false">
-										услуги
-									</a>
-									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="#sp-create">создание сайтов</a></li>
-										<li><a class="dropdown-item" href="#sp-promotion">продвижение сайтов</a></li>
-										<li><a class="dropdown-item" href="#sp-support">поддержка сайтов</a></li>
-										<li><a class="dropdown-item" href="https://site100.ru/uslugi/klienty-na-korpusnuyu-mebel/">клиенты
-												на корпусную мебель</a></li>
-									</ul>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link last" href="#contacts-sp">КОНТАКТЫ</a>
-								</li>
-							</ul>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>

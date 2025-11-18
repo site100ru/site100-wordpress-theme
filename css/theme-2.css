@@ -199,7 +199,7 @@ p,
 .dropdown-toggle::after {
 	background-position: bottom;
 	vertical-align: 0;
-	margin-left: 1rem;
+	margin-left: 0.5rem;
 	background-size: 10px;
 	border: none !important;
 	background-image: url(../img/ico/arrow-element.svg) !important;
@@ -1756,4 +1756,16 @@ figure.wp-block-image img {
 .form-check-input:checked {
 	background-color: #dc3545;
 	border-color: #dc3545;
+}
+
+#blog-header-2 {
+    height: auto;
+}
+
+#blog-header-2 {
+    height: auto;
+}
+
+#blog-header-2.single {
+    height: auto;
 }

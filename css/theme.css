@@ -887,3 +887,137 @@ form .form-label {
 	color: white;
 	margin: auto;
 }
+
+.header-light.header .link-item,
+.header-light.header span.f-menu,
+.header-light .phone-link,
+.header-light.header .navbar .nav-link {
+    transition: all 0.3s ease;
+    color: #4b4b4b;
+}
+
+.header-light.header .link-item:hover,
+.header-light .phone-link:hover,
+.header-light.header span.f-menu:hover {
+    opacity: 0.75;
+}
+
+.header-light.header .navbar .nav-link {
+    font-family: Gilroy-Semibold;
+}
+
+.header-light.header .navbar .nav-link:hover {
+    color: var(--corporate-color-1);
+}
+
+.jobs-page .header {
+    height: auto;
+}
+
+#top-menu-2 {
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    top: 57px;
+}
+
+@media (max-width: 991.98px) {
+    #top-menu-2 {
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        top: 0px;
+    }
+}
+
+#main-section.jobs {
+    max-height: 230px;
+    height: 230px;
+    position: relative;
+}
+
+#main-section.jobs::after {
+    height: 300px;
+    background-position-y: calc(64% - 5vh);
+}
+
+@media (max-width: 575.98px) {
+    #main-section.jobs::after {
+        background-position: 100%;
+    }
+}
+
+#main-section.jobs h1 {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+#top-menu-2 .header-menu .nav-link  {
+    font-family: Gilroy-Medium;
+    font-weight: 500;
+    font-size: 14px;
+    color: #4b4b4b;
+    line-height: 17px;
+    position: relative;
+    text-transform: uppercase;
+    text-align: left;
+    text-decoration: none;
+}
+
+
+#top-menu-2 .header-menu .nav-link.active {
+    color: #DC3545;
+}
+
+
+#section-jobs .section-title.jobs-section-title {
+    font-weight: bold;
+    font-family: Gilroy-Bold;
+}
+
+@media (max-width: 768px) {
+    #section-jobs .section-title {
+        text-align: start;
+    }
+}
+
+@media (max-width: 768px) {
+    #section-jobs .section-title.jobs-section-title {
+        font-size: 24px;
+    }
+}
+
+#section-jobs .ul-list.jobs-list li {
+    font-family: HelveticaNeueCyr;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#section-jobs .h3.jobs-title {
+    font-family: Gilroy-Semibold;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1;
+}
+
+
+@media (max-width: 992px ) {
+    .jobs-main-section {
+        margin-top: 60px;
+    }
+
+    .jobs-page .header .fixed-menu, 
+    .jobs-page .header .burger-menu {
+        height: auto;
+    }
+    
+    .jobs-page #menu-main-menu {
+        flex-direction: column;
+    }
+
+    .jobs-page  .header .adapt-menu {
+        box-shadow: 0px 20px 16px -40px #202020;
+    }
+}
