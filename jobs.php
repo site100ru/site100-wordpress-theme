@@ -412,6 +412,14 @@ if (isset($_SESSION['win'])) {
                         </li>
 
                         <li class="nav-item">
+                            <a class="nav-link active" href="<?php echo site_url('/jobs/'); ?>" data-target="blog-page">Вакансии</a>
+                        </li>
+
+                        <li class="nav-item d-none d-lg-inline">
+                            <img class="nav-link" src="<?php echo get_template_directory_uri(); ?>/img/ico/menu-point.svg" />
+                        </li>
+
+                        <li class="nav-item">
                             <a class="nav-link last" href="#contacts-sp" data-target="contacts-page">Контакты</a>
                         </li>
                     </ul>
