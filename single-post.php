@@ -173,7 +173,7 @@ if (isset($_SESSION['win'])) {
 						<span class="navbar-toggler-icon"></span>
 					</button>
 				</div>
-				<div class="collapse navbar-collapse w-100 justify-content-end mt-2" id="adapt-menu-collapse">
+				<div class="collapse navbar-collapse w-100 justify-content-end mt-2 mt-2 mt-2" id="adapt-menu-collapse">
 					<div class="adapt-menu d-flex pb-3 px-3 px-sm-5 pb-lg-0 px-lg-0 justify-content-lg-end">
 						<div class="navbar-nav">
 							<ul class="header-menu nav justify-content-center">
@@ -192,10 +192,10 @@ if (isset($_SESSION['win'])) {
 										Услуги
 									</a>
 									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="/#sp-create" data-target="service-web">создание сайтов</a></li>
-										<li><a class="dropdown-item" href="/#sp-promotion" data-target="service-promotion">продвижение
+										<li><a class="dropdown-item" href="#sp-create" data-target="service-web">создание сайтов</a></li>
+										<li><a class="dropdown-item" href="#sp-promotion" data-target="service-promotion">продвижение
 												сайтов</a></li>
-										<li><a class="dropdown-item" href="/#sp-support" data-target="service-support">поддержка сайтов</a>
+										<li><a class="dropdown-item" href="#sp-support" data-target="service-support">поддержка сайтов</a>
 										</li>
 										<li><a class="dropdown-item" href="https://site100.ru/kitchen/" data-target="service-kitchen">клиенты на корпусную
 												мебель</a></li>
@@ -210,12 +210,12 @@ if (isset($_SESSION['win'])) {
 									<img class="nav-link" src="<?php echo get_template_directory_uri(); ?>/img/ico/menu-point.svg" />
 								</li>
 
-                                <li class="nav-item d-none d-lg-inline">
-									<img class="nav-link" src="<?php echo get_template_directory_uri(); ?>/img/ico/menu-point.svg" />
-								</li>
-
                                 <li class="nav-item">
 									<a class="nav-link" href="<?php echo site_url('/jobs/'); ?>" data-target="blog-page">Вакансии</a>
+								</li>
+
+								<li class="nav-item d-none d-lg-inline">
+									<img class="nav-link" src="<?php echo get_template_directory_uri(); ?>/img/ico/menu-point.svg" />
 								</li>
 
 								<li class="nav-item">
@@ -249,8 +249,7 @@ if (isset($_SESSION['win'])) {
 								<span class="f-menu ms-1">Ежедневно c 9:00 до 21:00</span>
 							</div>
 							<div class="d-flex d-lg-none justify-content-start">
-								<a class="nav-link ico-button px-2" href="https://wa.me/79307878068?web=1&app_absent=1&"
-									target="_blank">
+								<a class="nav-link ico-button px-2" href="https://wa.me/79307878068?web=1&amp;app_absent=1&amp;" target="_blank">
 									<img src="<?php echo get_template_directory_uri(); ?>/img/ico/whatsapp-ico.svg">
 								</a>
 								<a class="nav-link ico-button" href="https://t.me/79307878068" target="_blank">
