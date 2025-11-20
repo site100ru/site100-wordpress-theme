@@ -238,7 +238,7 @@ if (isset($_SESSION['win'])) {
 		<nav
 			class="fixed-menu header-nav-bottom navbar navbar-expand-lg navbar-light start-0 d-flex align-items-center justify-content-lg-between justify-content-around mt-0">
 			<div class="container-fluid container-lg d-flex bg-white">
-                <div class="container d-flex bg-white w-100 justify-content-between align-items-center">
+                <div class="container d-flex bg-white w-100 justify-content-between align-items-center pb-2 pb-lg-0">
 					<a class="navbar-brand logo me-1" href="https://site100.ru">site<span class="text-danger">100</span>.ru</a>
 					<div class="add-info-block d-flex flex-column align-items-center d-lg-none py-1 me-2 me-sm-5">
 						<a class="link-item phone-link-mobile" href="tel: +79307878068">+7 (930) 78-78-0-68</a>

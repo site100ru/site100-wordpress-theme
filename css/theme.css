@@ -1055,6 +1055,8 @@ form .form-label {
     margin-bottom: 2;
 }
 
-.fixed-menu .container-fluid.container-lg .container.d-flex {
-    max-width: max-content;
+@media (min-width: 992px) {
+    .fixed-menu .container-fluid.container-lg .container.d-flex {
+        max-width: max-content;
+    }
 }
