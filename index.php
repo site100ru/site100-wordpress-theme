@@ -65,8 +65,8 @@ if (isset($_SESSION['win'])) {
 
 		<!-- Menu -->
 		<div class="container">
-			<div class="lists me-5 w-100 d-flex flex-column align-items-end">
-				<div class="container f-menu justify-content-center text-start d-none d-lg-block ms-auto me-0">
+			<div class="lists w-100 d-flex flex-column align-items-end">
+				<div class="f-menu justify-content-center text-start d-none d-lg-block ms-auto me-0">
 					<div class="d-flex list-inline align-items-center ms-lg-auto justify-content-end mt-2"
 						style="width: fit-content;">
 						<div class="navbar-brand fw-normal me-5 d-none d-lg-flex align-items-center">
@@ -115,7 +115,7 @@ if (isset($_SESSION['win'])) {
 							<a class="nav-link ico-button me-3" href="https://t.me/79307878068" target="_blank">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg">
 							</a>
-							<a class="nav-link ico-button  me-3" href="https://wa.me/79307878068?web=1&amp;app_absent=1&amp;" target="_blank">
+							<a class="nav-link ico-button " href="https://wa.me/79307878068?web=1&amp;app_absent=1&amp;" target="_blank">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/whatsapp-ico.svg">
 							</a>
                             <!-- <a class="nav-link ico-button px-2" href="https://wa.me/79307878068?web=1&amp;app_absent=1&amp;" target="_blank">
@@ -131,8 +131,7 @@ if (isset($_SESSION['win'])) {
 		<nav
 			class="d-none d-lg-flex burger-menu header-nav-bottom navbar navbar-expand-lg navbar-light start-0 align-items-center justify-content-lg-between justify-content-around mt-0"
 			style="z-index: 100;">
-			<div class="container-fluid container-lg px-0 d-flex">
-				<div class="container d-flex justify-content-between align-items-center" style="z-index: 1000;">
+			<div class="container container-lg d-flex">
 					<a class="navbar-brand logo me-1" href="https://site100.ru">site<span class="text-danger">100</span>.ru</a>
 					<div class="add-info-block d-flex flex-column align-items-center d-lg-none py-1 me-2 me-sm-5">
 						<a class="link-item fw-bold phone-link" href="tel: +79307878068">+7 (930) 78-78-0-68</a>
@@ -149,8 +148,7 @@ if (isset($_SESSION['win'])) {
 						aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-				</div>
-				<div class="collapse navbar-collapse w-100 justify-content-end" id="adapt-menu-collapse">
+				<div class="collapse navbar-collapse w-100 justify-content-end mt-2 mt-2 mt-2" id="adapt-menu-collapse">
 					<div class="adapt-menu d-flex pb-3 px-3 px-sm-5 pb-lg-0 px-lg-0 justify-content-lg-end">
 						<div class="navbar-nav">
 							<ul class="header-menu nav justify-content-center">
@@ -381,7 +379,7 @@ if (isset($_SESSION['win'])) {
 		<!-- Site create section -->
 		<div id="sp-create"></div>
 		<section id="site-create-section" class="py-5">
-			<div class="container-fluid px-md-0 pt-5" style="overflow: hidden;">
+			<div class="container-fluid pt-5" style="overflow: hidden;">
 				<div class="row">
 					<div class="col offset-md-2">
 						<div class="title-line mb-3"></div>
@@ -389,7 +387,7 @@ if (isset($_SESSION['win'])) {
 					</div>
 				</div>
 			</div>
-			<div class="container-fluid px-md-0 pb-5" style="overflow: hidden;">
+			<div class="container-fluid pb-5" style="overflow: hidden;">
 				<div class="row">
 					<div class="col">
 						<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="60000">
@@ -655,13 +653,13 @@ if (isset($_SESSION['win'])) {
 		<section id="site-create-portfolio" class="text-light pt-5 pb-4">
 			<div class="container">
 				<div class="row">
-					<div class="col px-md-0 pt-5">
+					<div class="col pt-5">
 						<div class="title-line mb-3"></div>
 						<h2 class="text-light mb-0">Несколько моих последних работ</h2>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col px-md-0">
+					<div class="col ">
 						<div class="nav-scroller">
 							<ul class="nav d-flex" id="myTab" role="tablist">
 								<li class="nav-item" role="presentation">
@@ -881,7 +879,7 @@ if (isset($_SESSION['win'])) {
 		<!-- SITE PROMOTION SECTION -->
 		<div id="sp-promotion"></div>
 		<section id="site-promotion-section" class="py-5">
-			<div class="container px-md-0 py-5" style="overflow: hidden;">
+			<div class="container py-5" style="overflow: hidden;">
 				<div class="row">
 					<div class="col">
 						<div class="title-line mb-3"></div>
@@ -897,7 +895,7 @@ if (isset($_SESSION['win'])) {
 					</div>
 				</div>
 			</div>
-			<div class="container px-md-0 pb-5">
+			<div class="container pb-5">
 				<div class="row">
 					<div class="col-md-4">
 						<div class="card mt-5 mt-md-3">
@@ -1050,7 +1048,7 @@ if (isset($_SESSION['win'])) {
 
 		<!-- SITE PROMOTION PORTFOLIO -->
 		<section id="site-promotion-portfolio" class="text-light py-5">
-			<div class="container-fluid px-md-0 py-5" style="overflow: hidden;">
+			<div class="container-fluid py-5" style="overflow: hidden;">
 				<div class="row">
 					<div class="col offset-md-2">
 						<div class="title-line mb-3"></div>
@@ -1058,7 +1056,7 @@ if (isset($_SESSION['win'])) {
 					</div>
 				</div>
 			</div>
-			<div class="container-fluid px-md-0" style="overflow: hidden;">
+			<div class="container-fluid " style="overflow: hidden;">
 				<div class="row">
 					<div class="col">
 
@@ -1217,7 +1215,7 @@ if (isset($_SESSION['win'])) {
 		<!-- SITE SUPPORT PORTFOLIO -->
 		<div id="sp-support"></div>
 		<section id="site-support-section" class="pt-5">
-			<div class="container px-md-0 pt-5" style="overflow: hidden;">
+			<div class="container pt-5" style="overflow: hidden;">
 				<div class="row">
 					<div class="col">
 						<div class="title-line mb-3"></div>
@@ -1563,7 +1561,7 @@ if (isset($_SESSION['win'])) {
 		<!-- ABOUT ME -->
 		<div id="sp-about"></div>
 		<section id="about-section" class="pb-5">
-			<div class="container px-md-0 py-5" style="overflow: hidden;">
+			<div class="container py-5" style="overflow: hidden;">
 				<div class="row">
 					<div class="col">
 						<div class="title-line mb-3"></div>
@@ -1571,7 +1569,7 @@ if (isset($_SESSION['win'])) {
 					</div>
 				</div>
 			</div>
-			<div class="container px-md-0">
+			<div class="container ">
 				<div class="row align-items-center">
 					<div class="col-6 offset-3 col-md-4 offset-md-1 pb-5 pb-md-0 text-center">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/about-img.jpg" class="w-100">
@@ -1597,7 +1595,7 @@ if (isset($_SESSION['win'])) {
 		<!-- ADVANTAGES -->
 		<div id="sp-advantages"></div>
 		<section id="advantages-section" class="py-5">
-			<div class="container px-md-0 py-5" style="overflow: hidden;">
+			<div class="container py-5" style="overflow: hidden;">
 				<div class="row">
 					<div class="col">
 						<div class="title-line mb-3"></div>
@@ -1605,7 +1603,7 @@ if (isset($_SESSION['win'])) {
 					</div>
 				</div>
 			</div>
-			<div class="container px-md-0">
+			<div class="container ">
 				<div class="row">
 					<div class="col-sm-6 col-lg-5 pb-5">
 						<div class="row">
@@ -1708,7 +1706,7 @@ if (isset($_SESSION['win'])) {
 		<!-- PROCESS -->
 		<div id="sp-process"></div>
 		<section id="site-process-section" class="py-5">
-			<div class="container px-md-0 py-5" style="overflow: hidden;">
+			<div class="container py-5" style="overflow: hidden;">
 				<div class="row">
 					<div class="col">
 						<div class="title-line mb-3"></div>
@@ -1716,7 +1714,7 @@ if (isset($_SESSION['win'])) {
 					</div>
 				</div>
 			</div>
-			<div class="container px-md-0">
+			<div class="container ">
 				<div class="row justify-content-center">
 					<div class="col-md-4 pb-5">
 						<div class="card mt-5 mt-md-3">

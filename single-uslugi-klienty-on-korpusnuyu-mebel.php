@@ -61,8 +61,8 @@ if (isset($_SESSION['win'])) {
 
 		<!-- Menu -->
 		<div class="container">
-			<div class="lists me-5 w-100 d-flex flex-column align-items-end">
-				<div class="container f-menu justify-content-center text-start d-none d-lg-block ms-auto me-0">
+			<div class="lists w-100 d-flex flex-column align-items-end">
+				<div class="f-menu justify-content-center text-start d-none d-lg-block ms-auto me-0">
 					<div class="d-flex list-inline align-items-center ms-lg-auto justify-content-end mt-2"
 						style="width: fit-content;">
 						<div class="navbar-brand fw-normal me-5 d-none d-lg-flex align-items-center">
@@ -111,7 +111,7 @@ if (isset($_SESSION['win'])) {
 							<a class="nav-link ico-button me-3" href="https://t.me/79307878068" target="_blank">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg">
 							</a>
-							<a class="nav-link ico-button px-2" href="https://wa.me/79307878068?web=1&app_absent=1&" target="_blank">
+							<a class="nav-link ico-button" href="https://wa.me/79307878068?web=1&app_absent=1&" target="_blank">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/whatsapp-ico.svg">
 							</a>
                              <!-- <a class="nav-link ico-button px-2" href="https://wa.me/79307878068?web=1&amp;app_absent=1&amp;" target="_blank">
@@ -146,7 +146,7 @@ if (isset($_SESSION['win'])) {
 						<span class="navbar-toggler-icon"></span>
 					</button>
 				</div>
-				<div class="collapse navbar-collapse w-100 justify-content-end" id="adapt-menu-collapse">
+				<div class="collapse navbar-collapse w-100 justify-content-end mt-2" id="adapt-menu-collapse">
 					<div class="adapt-menu d-flex pb-3 px-3 px-sm-5 pb-lg-0 px-lg-0 justify-content-lg-end">
 						<div class="navbar-nav">
 							<ul class="header-menu nav justify-content-center">

@@ -5,6 +5,8 @@
 	--corporate-color-active-1: #902531;
 	/* --corporate-color-2: #BB2D3C; */
 	--default-color: #323232;
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 0.5rem;
 }
 /* END ALL */
 
@@ -181,13 +183,24 @@ a:hover {
 	color: #4b4b4b;
 }
 
-#top-menu-2 {
-	border-top: 1px solid rgba(175, 175, 175, 0.5);
+/* #top-menu-2 {
 	background: rgba(248, 249, 250, 0.85);
 	position: sticky;
 	width: 100%;
 	z-index: 999;
 	top: 0;
+} */
+
+@media (max-width: 991.98px) {
+    #top-menu-2 { 
+        position: fixed;
+        z-index: 999;
+        width: 100%;        
+    }
+}
+
+#top-menu-4 {
+    border-bottom: 1px solid #d7d7d7;
 }
 
 .menu-item {
@@ -771,7 +784,7 @@ form .form-label {
 	width: auto;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
 	.logo-wrapper {
 		width: 100%;
 	}
@@ -785,7 +798,7 @@ form .form-label {
 	text-align: start;
 }
 
-@media (min-width: 778px) {
+@media (min-width: 767.98px) {
 	.policy-in-footer {
 		justify-self: center;
 	}
@@ -914,13 +927,13 @@ form .form-label {
     height: auto;
 }
 
-#top-menu-2 {
+/* #top-menu-2 {
     position: absolute;
     width: 100%;
     z-index: 999;
     top: 57px;
-}
-
+} */
+/* 
 @media (max-width: 991.98px) {
     #top-menu-2 {
         position: fixed;
@@ -928,12 +941,17 @@ form .form-label {
         z-index: 999;
         top: 0px;
     }
-}
+} */
 
 #main-section.jobs {
-    max-height: 230px;
-    height: 230px;
+    height: auto;
     position: relative;
+}
+
+@media (max-width: 991.98px) {
+    #main-section.jobs {
+        margin-top: 60px;
+    }
 }
 
 #main-section.jobs::after {
@@ -950,6 +968,16 @@ form .form-label {
 #main-section.jobs h1 {
     color: #fff;
     text-transform: uppercase;
+    font-weight: 900;
+    font-size: 48px;
+    margin-bottom: 0;
+    font-family: Gilroy-Bold;
+}
+
+@media (max-width: 991.98px) {
+    #main-section.jobs h1 {
+        font-size: 35px;
+    }
 }
 
 
@@ -1003,11 +1031,7 @@ form .form-label {
 }
 
 
-@media (max-width: 992px ) {
-    .jobs-main-section {
-        margin-top: 60px;
-    }
-
+@media (max-width: 991.98px ) {
     .jobs-page .header .fixed-menu, 
     .jobs-page .header .burger-menu {
         height: auto;
