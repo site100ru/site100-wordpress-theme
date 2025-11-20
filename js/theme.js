@@ -48,7 +48,7 @@ function prilipalo() {
                 topMenu.style.position = 'absolute';
                 topMenu.style.top = '65px';
 
-                mainSection.style.marginTop = '84px';
+                mainSection.style.marginTop = '76px';
 
                 // Не убираем padding-top, он останется
             }
