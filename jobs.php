@@ -141,7 +141,7 @@ if (isset($_SESSION['win'])) {
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse w-100 justify-content-end mt-2" id="adapt-menu-collapse">
+            <div class="collapse navbar-collapse w-100 justify-content-end" id="adapt-menu-collapse">
                 <div class="adapt-menu d-flex  justify-content-lg-end">
                     <div class="navbar-nav">
                         <ul class="header-menu nav flex-column flex-lg-row justify-content-center">
@@ -160,10 +160,10 @@ if (isset($_SESSION['win'])) {
                                     Услуги
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#sp-create" data-target="service-web">создание сайтов</a></li>
-                                    <li><a class="dropdown-item" href="#sp-promotion" data-target="service-promotion">продвижение
+                                    <li><a class="dropdown-item" href="/#sp-create" data-target="service-web">создание сайтов</a></li>
+                                    <li><a class="dropdown-item" href="/#sp-promotion" data-target="service-promotion">продвижение
                                             сайтов</a></li>
-                                    <li><a class="dropdown-item" href="#sp-support" data-target="service-support">поддержка сайтов</a>
+                                    <li><a class="dropdown-item" href="/#sp-support" data-target="service-support">поддержка сайтов</a>
                                     </li>
                                     <li><a class="dropdown-item" href="https://site100.ru/kitchen/" data-target="service-kitchen">клиенты на корпусную
                                             мебель</a></li>

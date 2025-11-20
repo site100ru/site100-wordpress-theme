@@ -148,7 +148,7 @@ if (isset($_SESSION['win'])) {
 						aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-				<div class="collapse navbar-collapse w-100 justify-content-end mt-2 mt-2 mt-2" id="adapt-menu-collapse">
+				<div class="collapse navbar-collapse w-100 justify-content-end" id="adapt-menu-collapse">
 					<div class="adapt-menu d-flex pb-3 px-3 px-sm-5 pb-lg-0 px-lg-0 justify-content-lg-end">
 						<div class="navbar-nav">
 							<ul class="header-menu nav justify-content-center">

@@ -7,6 +7,7 @@
 	--default-color: #323232;
     --bs-nav-link-padding-x: 0;
     --bs-nav-link-padding-y: 0.5rem;
+    --bs-navbar-brand-padding-y: 0.3125rem;
 }
 /* END ALL */
 
@@ -982,7 +983,7 @@ form .form-label {
 
 
 #top-menu-2 .header-menu .nav-link  {
-    font-family: Gilroy-Medium;
+    font-family: HelveticaNeueCyr-Medium;
     font-weight: 500;
     font-size: 14px;
     color: #4b4b4b;

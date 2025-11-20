@@ -262,7 +262,7 @@ p,
 }
 
 .header .navbar .nav-link {
-	font-family: Gilroy-Medium;
+	font-family: HelveticaNeueCyr-Medium;
 	font-weight: 500;
 	font-size: 14px;
 	color: #c8c8c8;
@@ -274,7 +274,7 @@ p,
 }
 
 .header .nav-link {
-	font-family: Gilroy-Medium;
+	font-family: HelveticaNeueCyr-Medium;
 	font-size: 14px;
 	color: #c8c8c8;
 	line-height: 17px;
@@ -328,7 +328,7 @@ p,
 }
 
 .header .logo {
-	font-family: Gilroy-Medium;
+	font-family: HelveticaNeueCyr-Medium;
 	font-weight: 500;
 	font-size: 28px;
 	color: #ebebeb;
