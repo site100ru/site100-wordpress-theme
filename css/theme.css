@@ -1054,3 +1054,7 @@ form .form-label {
 #top-menu-2 .header-menu img.nav-link {
     margin-bottom: 2;
 }
+
+.fixed-menu .container-fluid.container-lg .container.d-flex {
+    max-width: max-content;
+}
