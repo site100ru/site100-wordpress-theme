@@ -240,9 +240,8 @@ if (isset($_SESSION['win'])) {
 			</div>
 		</nav>
 		<nav
-			class="fixed-menu header-nav-bottom navbar navbar-expand-lg navbar-light start-0 d-flex align-items-center justify-content-lg-between justify-content-around mt-0 py-1">
-			<div class="container-fluid container-lg px-0 d-flex bg-white">
-				<div class="container d-flex justify-content-between align-items-center">
+			class="fixed-menu header-nav-bottom navbar navbar-expand-lg navbar-light start-0 d-flex align-items-center justify-content-lg-between justify-content-around mt-0">
+			<div class="container-fluid container-lg d-flex bg-white">
 					<a class="navbar-brand logo me-1" href="https://site100.ru">site<span class="text-danger">100</span>.ru</a>
 					<div class="add-info-block d-flex flex-column align-items-center d-lg-none py-1 me-2 me-sm-5">
 						<a class="link-item phone-link-mobile" href="tel: +79307878068">+7 (930) 78-78-0-68</a>
@@ -259,9 +258,7 @@ if (isset($_SESSION['win'])) {
 						aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-				</div>
-            
-				<div class="collapse navbar-collapse justify-content-end w-100  bg-white container" id="adapt-menu-collapse">
+				<div class="collapse navbar-collapse justify-content-end w-100 bg-white" id="adapt-menu-collapse">
 					<div class="adapt-menu d-flex pb-3 5 pb-lg-0 px-lg-0 justify-content-lg-end">
 						<div class="navbar-nav">
 							<div class="nav-item dropdown">
