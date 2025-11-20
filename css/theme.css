@@ -910,9 +910,23 @@ form .form-label {
     color: #4b4b4b;
 }
 
+.header .link-item,
+.header span.f-menu,
+.phone-link,
+.header .navbar .nav-link {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
 .header-light.header .link-item:hover,
 .header-light .phone-link:hover,
 .header-light.header span.f-menu:hover {
+    opacity: 0.75;
+}
+
+.header .link-item:hover,
+.phone-link:hover,
+.header span.f-menu:hover {
     opacity: 0.75;
 }
 
