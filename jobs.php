@@ -123,8 +123,8 @@ if (isset($_SESSION['win'])) {
         </div>
     </nav>
 
-    <nav id="top-menu-2" class="navbar navbar-expand-lg navbar-light bg-white shadow py-0 header w-100">
-        <div class="container d-flex justify-content-between align-items-center py-0 py-md-2 my-2 mb-0 mb-md-2 " style="z-index: 1000;">
+    <nav id="top-menu-2" class="navbar navbar-expand-lg navbar-light bg-white shadow py-0 header w-100 py-0 py-md-2 ">
+        <div class="container d-flex justify-content-between align-items-center my-2 mb-0 mb-md-2 " style="z-index: 1000;">
             <a class="navbar-brand logo me-1 text-dark" href="https://site100.ru">site<span class="text-danger">100</span>.ru</a>
 
             <div class="add-info-block d-flex flex-column align-items-center d-lg-none py-1 me-2 me-sm-5">

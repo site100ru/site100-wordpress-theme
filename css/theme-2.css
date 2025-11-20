@@ -313,12 +313,12 @@ p,
 }
 
 .active {
-	color: var(--corporate-color-active-1) !important;
+	color: var(--corporate-color-1) !important;
 }
 
 .header .nav-link:hover,
 .header .nav-link:active {
-	color: var(--corporate-color-active-1) !important;
+	color: var(--corporate-color-1) !important;
 }
 
 .nav-link.arrow-element::after {
