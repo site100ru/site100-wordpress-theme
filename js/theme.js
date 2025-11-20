@@ -46,9 +46,9 @@ function prilipalo() {
                 // Убираем fixed-top, если прокрутка меньше 50px
                 topMenu.classList.remove('fixed-top');
                 topMenu.style.position = 'absolute';
-                topMenu.style.top = '65px';
+                topMenu.style.top = '74px';
 
-                mainSection.style.marginTop = '76px';
+                mainSection.style.marginTop = '84px';
 
                 // Не убираем padding-top, он останется
             }

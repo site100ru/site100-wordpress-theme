@@ -629,7 +629,7 @@ if (isset($_SESSION['win'])) {
         let item_2 = document.getElementById('carousel-item-2');
         let item_3 = document.getElementById('carousel-item-3');
 
-        if (item_1.classList.contains('active') == true) {
+        if (item_1 && item_1.classList.contains('active') == true ) {
             prev.classList.add("disabled");
         }
 

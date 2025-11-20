@@ -266,7 +266,7 @@ p,
 	font-weight: 500;
 	font-size: 14px;
 	color: #c8c8c8;
-	line-height: 17px;
+	line-height: 18px;
 	position: relative;
 	text-transform: uppercase;
 	text-align: left;
@@ -277,7 +277,7 @@ p,
 	font-family: HelveticaNeueCyr-Medium;
 	font-size: 14px;
 	color: #c8c8c8;
-	line-height: 17px;
+	line-height: 18px;
 	text-transform: uppercase;
 	padding-inline: 0 !important;
 	transition: 0.25s;
@@ -928,7 +928,7 @@ main {
 }
 
 .footer .nav-link {
-	font-family: Gilroy-Medium;
+	font-family: HelveticaNeueCyr-Medium;
 	position: relative;
 	text-transform: uppercase;
 	text-align: right;
@@ -951,10 +951,10 @@ main {
 
 .footer-menu .nav-link {
 	padding-inline: 0;
-	font-family: Gilroy-Medium;
+	font-family: HelveticaNeueCyr-Medium;
 	font-size: 14px;
 	color: #c8c8c8;
-	line-height: 17px;
+	line-height: 18px;
 	position: relative;
 	text-transform: uppercase;
 	text-align: left;
