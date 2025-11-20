@@ -262,10 +262,10 @@ if (isset($_SESSION['win'])) {
 				</div>
 			</div>
 		</nav>
-		<nav
+        <nav
 			class="fixed-menu header-nav-bottom navbar navbar-expand-lg navbar-light start-0 d-flex align-items-center justify-content-lg-between justify-content-around mt-0">
 			<div class="container-fluid container-lg d-flex bg-white">
-				<div class="container d-flex justify-content-between align-items-center">
+                <div class="container d-flex bg-white w-100 justify-content-between align-items-center">
 					<a class="navbar-brand logo me-1" href="https://site100.ru">site<span class="text-danger">100</span>.ru</a>
 					<div class="add-info-block d-flex flex-column align-items-center d-lg-none py-1 me-2 me-sm-5">
 						<a class="link-item phone-link-mobile" href="tel: +79307878068">+7 (930) 78-78-0-68</a>
@@ -282,8 +282,8 @@ if (isset($_SESSION['win'])) {
 						aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-            
-				<div class="collapse navbar-collapse justify-content-end w-100 bg-white" id="adapt-menu-collapse">
+                </div>
+				<div class="navbar-collapse justify-content-end w-100 bg-white container collapse" id="adapt-menu-collapse">
 					<div class="adapt-menu d-flex pb-3 5 pb-lg-0 px-lg-0 justify-content-lg-end">
 						<div class="navbar-nav">
 							<div class="nav-item dropdown">
@@ -313,7 +313,7 @@ if (isset($_SESSION['win'])) {
 									</li>
 
 									<li class="nav-item">
-										<a class="nav-link" href="<?php echo site_url('/blog/'); ?>" data-target="blog-page">Блог</a>
+										<a class="nav-link active" href="<?php echo site_url('/blog/'); ?>" data-target="blog-page">Блог</a>
 									</li>
 
 									<li class="nav-item d-none d-lg-inline">

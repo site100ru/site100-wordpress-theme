@@ -111,10 +111,10 @@ if (isset($_SESSION['win'])) {
 							<a class="nav-link ico-button me-3" href="https://t.me/79307878068" target="_blank">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg">
 							</a>
-							<a class="nav-link ico-button" href="https://wa.me/79307878068?web=1&app_absent=1&" target="_blank">
+							<a class="nav-link ico-button " href="https://wa.me/79307878068?web=1&amp;app_absent=1&amp;" target="_blank">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/whatsapp-ico.svg">
 							</a>
-                             <!-- <a class="nav-link ico-button px-2" href="https://wa.me/79307878068?web=1&amp;app_absent=1&amp;" target="_blank">
+                            <!-- <a class="nav-link ico-button px-2" href="https://wa.me/79307878068?web=1&amp;app_absent=1&amp;" target="_blank">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/max.svg">
 							</a> -->
 						</div>
@@ -127,7 +127,7 @@ if (isset($_SESSION['win'])) {
 		<nav
 			class="d-none d-lg-flex burger-menu header-nav-bottom navbar navbar-expand-lg navbar-light start-0 align-items-center justify-content-lg-between justify-content-around mt-0"
 			style="z-index: 100;">
-				<div class="container d-flex justify-content-between align-items-center">
+			<div class="container container-lg d-flex">
 					<a class="navbar-brand logo me-1" href="https://site100.ru">site<span class="text-danger">100</span>.ru</a>
 					<div class="add-info-block d-flex flex-column align-items-center d-lg-none py-1 me-2 me-sm-5">
 						<a class="link-item fw-bold phone-link" href="tel: +79307878068">+7 (930) 78-78-0-68</a>
@@ -144,7 +144,7 @@ if (isset($_SESSION['win'])) {
 						aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-                <div class="collapse navbar-collapse w-100 justify-content-end" id="adapt-menu-collapse">
+				<div class="collapse navbar-collapse w-100 justify-content-end" id="adapt-menu-collapse">
 					<div class="adapt-menu d-flex pb-3 px-3 px-sm-5 pb-lg-0 px-lg-0 justify-content-lg-end">
 						<div class="navbar-nav">
 							<ul class="header-menu nav justify-content-center">
@@ -163,10 +163,10 @@ if (isset($_SESSION['win'])) {
 										Услуги
 									</a>
 									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="/#sp-create" data-target="service-web">создание сайтов</a></li>
-										<li><a class="dropdown-item" href="/#sp-promotion" data-target="service-promotion">продвижение
+										<li><a class="dropdown-item" href="#sp-create" data-target="service-web">создание сайтов</a></li>
+										<li><a class="dropdown-item" href="#sp-promotion" data-target="service-promotion">продвижение
 												сайтов</a></li>
-										<li><a class="dropdown-item" href="/#sp-support" data-target="service-support">поддержка сайтов</a>
+										<li><a class="dropdown-item" href="#sp-support" data-target="service-support">поддержка сайтов</a>
 										</li>
 										<li><a class="dropdown-item" href="https://site100.ru/kitchen/" data-target="service-kitchen">клиенты на корпусную
 												мебель</a></li>
@@ -238,7 +238,7 @@ if (isset($_SESSION['win'])) {
 		<nav
 			class="fixed-menu header-nav-bottom navbar navbar-expand-lg navbar-light start-0 d-flex align-items-center justify-content-lg-between justify-content-around mt-0">
 			<div class="container-fluid container-lg d-flex bg-white">
-				<div class="container d-flex justify-content-between align-items-center">
+                <div class="container d-flex bg-white w-100 justify-content-between align-items-center">
 					<a class="navbar-brand logo me-1" href="https://site100.ru">site<span class="text-danger">100</span>.ru</a>
 					<div class="add-info-block d-flex flex-column align-items-center d-lg-none py-1 me-2 me-sm-5">
 						<a class="link-item phone-link-mobile" href="tel: +79307878068">+7 (930) 78-78-0-68</a>
@@ -255,14 +255,14 @@ if (isset($_SESSION['win'])) {
 						aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-            
-				<div class="collapse navbar-collapse justify-content-end w-100 bg-white" id="adapt-menu-collapse">
+                </div>
+				<div class="navbar-collapse justify-content-end w-100 bg-white container collapse" id="adapt-menu-collapse">
 					<div class="adapt-menu d-flex pb-3 5 pb-lg-0 px-lg-0 justify-content-lg-end">
 						<div class="navbar-nav">
 							<div class="nav-item dropdown">
 								<ul class="header-menu nav flex-column flex-lg-row justify-content-center">
 									<li class="nav-item">
-										<a class="nav-link " aria-current="page" href="<?php echo site_url('/'); ?>"
+										<a class="nav-link" aria-current="page" href="<?php echo site_url('/'); ?>"
 											data-target="main-page">Главная</a>
 									</li>
 
