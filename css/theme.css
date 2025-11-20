@@ -1049,3 +1049,7 @@ form .form-label {
 #blog-header-2 .mini-hero {
     padding-block: 80px;
 }
+
+#top-menu-2 .header-menu img.nav-link {
+    margin-bottom: 2;
+}
