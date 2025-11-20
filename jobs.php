@@ -66,7 +66,7 @@ if (isset($_SESSION['win'])) {
         <div class="container">
             <div class="lists w-100 d-flex flex-column align-items-end">
                 <div class="f-menu justify-content-center text-start d-none d-lg-block ms-auto me-0">
-                    <div class="d-flex list-inline align-items-center ms-lg-auto justify-content-end header-light">
+                    <div class="d-flex list-inline align-items-center ms-lg-auto justify-content-end header-light mt-2">
                         <div class="navbar-brand fw-normal me-5 d-none d-lg-flex align-items-center">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
