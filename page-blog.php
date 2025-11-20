@@ -83,7 +83,7 @@ if (isset($_SESSION['win'])) {
 							</svg>
 							<span class="f-menu ms-3">Без выходных<br>с 9:00 до 21:00</span>
 						</div>
-						<div class="navbar-brand fw-normal mx-3 mx-xl-5">
+						<div class="navbar-brand fw-normal mx-3 mx-xl-5 gap-3 d-flex align-items-center">
 							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<g clip-path="url(#clip0_2001_193)">
 									<path opacity="0.998" fill-rule="evenodd" clip-rule="evenodd"
@@ -101,7 +101,7 @@ if (isset($_SESSION['win'])) {
 							</svg>
 							<a class="link-item" href="#" data-bs-toggle="modal" data-bs-target="#callbackModal">Обратный звонок</a>
 						</div>
-						<div class="navbar-brand d-flex align-items-center me-3  me-xl-5">
+						<div class="navbar-brand d-flex align-items-center me-3  me-xl-5 gap-3">
 							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path
 									d="M4 3C4 1.34531 5.30455 0 6.90909 0H17.0909C18.6955 0 20 1.34531 20 3V21C20 22.6547 18.6955 24 17.0909 24H6.90909C5.30455 24 4 22.6547 4 21V3ZM9.81818 21C9.81818 21.4125 10.1455 21.75 10.5455 21.75H13.4545C13.8545 21.75 14.1818 21.4125 14.1818 21C14.1818 20.5875 13.8545 20.25 13.4545 20.25H10.5455C10.1455 20.25 9.81818 20.5875 9.81818 21ZM17.0909 3H6.90909V18H17.0909V3Z"
