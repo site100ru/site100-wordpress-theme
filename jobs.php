@@ -146,7 +146,7 @@ if (isset($_SESSION['win'])) {
                     <div class="navbar-nav">
                         <ul class="header-menu nav flex-column flex-lg-row justify-content-center">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="<?php echo site_url('/'); ?>"
+                                <a class="nav-link" aria-current="page" href="<?php echo site_url('/'); ?>"
                                     data-target="main-page">Главная</a>
                             </li>
 
@@ -179,7 +179,7 @@ if (isset($_SESSION['win'])) {
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo site_url('/jobs/'); ?>" data-target="blog-page">Вакансии</a>
+                                <a class="nav-link active" href="<?php echo site_url('/jobs/'); ?>" data-target="blog-page">Вакансии</a>
                             </li>
 
                             <li class="nav-item d-none d-lg-inline">
