@@ -1059,6 +1059,10 @@ form .form-label {
     .jobs-page  .header .adapt-menu {
         box-shadow: 0px 20px 16px -40px #202020;
     }
+
+    #blog-header-2 .mini-hero {
+        margin-top: 60px;
+    }
 }
 
 #blog-header-2 .mini-hero {
