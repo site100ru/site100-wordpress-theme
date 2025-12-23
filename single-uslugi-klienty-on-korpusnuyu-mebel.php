@@ -22,16 +22,15 @@ if (isset($_SESSION['win'])) {
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description"
-		content="Разработаю продающий сайт. Настрою контекстную рекламу. Подключу CRM, онлайн оплату, сервис доставки. Создам систему привлечения клиентов в Ваш бизнес." />
-	<meta name="keywords"
-		content="Создание сайтов, разработка сайтов, продвижение сайтов, сео продвижение сайтов, seo продвижение сайтов, контекстная реклама, реклама в Яндексе, реклама в Яндекс Директ, настройка Яндекс Директ, поддержка сайтов, администрирование сайтов" />
+	<meta name="description" content="Заявки на кухни и шкафы на заказ" />
+	<meta name="keywords" content="Клиенты на кухни на заказ, заявки на кухни на заказ, клиенты на кухни, заявки на кухни, клиенты на шкафы на заказ, заявки на шкафы на заказ, клиенты на шкафы, заявки на шкафы" />
+	<meta property="og:url" content="https://site100.ru/kitchen/" />
+	<link rel="canonical" href="https://site100.ru/kitchen/">
 	<meta property="og:locale" content="ru_RU" />
 	<meta property="og:type" content="website" />
 	<meta property="og:site_name" content="Создание, продвижение и поддержка сайтов в Москве и МО" />
-	<meta property="og:title" content="Создание, продвижение и поддержка сайтов в Москве и МО" />
-	<meta property="og:description"
-		content="Создание сайтов, продвижение сайтов, контекстная реклама, сео-продвижение, поддержка сайтов" />
+	<meta property="og:title" content="Заявки на кухни и шкафы на заказ" />
+	<meta property="og:description" content="Заявки на кухни и шкафы на заказ" />
 	<!-- Bootstrap CSS -->
 	<link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css" rel="stylesheet">
 
@@ -46,7 +45,7 @@ if (isset($_SESSION['win'])) {
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Glory:wght@600&display=swap" rel="stylesheet">
 
-	<title>Создание, продвижение и поддержка сайтов в Москве и МО | site100.ru | 8 (930) 787-80-68</title>
+	<title>Заявки на кухни и шкафы на заказ</title>
 	
 	<?php if ($counter_head = get_theme_mod('mytheme_counter_head')): ?>
         <!-- Код счетчика в (head) -->
@@ -352,10 +351,8 @@ if (isset($_SESSION['win'])) {
 			<div class="row align-items-center">
 				<div class="col">
 					<h1 class="home-title mb-4">Заявки на кухни и шкафы на заказ</h1>
-					<h2 class="home-subtitle mb-4">Приведу клиентов на изготовление кухонь, шкафов, гардеробных, тумб и другой
-						корпусной мебели на заказ от 1 500 рублей за заявку от реального клиента!</h2>
-					<button type="button" class="btn btn-lg btn-corporate-color-1 px-4" data-bs-toggle="modal"
-						data-bs-target="#callbackModal">Оставить заявку</button>
+					<h2 class="home-subtitle mb-4">Приведу клиентов на изготовление кухонь, шкафов, гардеробных, тумб и другой корпусной мебели на заказ от 1 500 рублей за заявку от реального клиента!</h2>
+					<button type="button" class="btn btn-lg btn-corporate-color-1 px-4" data-bs-toggle="modal" data-bs-target="#callbackModal">Оставить заявку</button>
 				</div>
 			</div>
 		</div>
