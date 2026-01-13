@@ -45,7 +45,7 @@ if (isset($_SESSION['win'])) {
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Glory:wght@600&display=swap" rel="stylesheet">
 
-	<title>Заявки на кухни и шкафы на заказ</title>
+	<title>Заявки и клиенты на кухни и шкафы купе на заказ</title>
 	
 	<?php if ($counter_head = get_theme_mod('mytheme_counter_head')): ?>
         <!-- Код счетчика в (head) -->
@@ -323,7 +323,7 @@ if (isset($_SESSION['win'])) {
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col">
-					<h1 class="home-title mb-4">Заявки и клиенты на кухни и шкафы купе на заказ</h1>
+					<h1 class="home-title mb-4">Заявки и&nbsp;клиенты на&nbsp;кухни и&nbsp;шкафы купе на&nbsp;заказ</h1>
 					<h2 class="home-subtitle mb-4">Приведу клиентов на изготовление кухонь, шкафов, гардеробных, тумб и другой корпусной мебели на заказ от 1 500 рублей за заявку от реального клиента!</h2>
 					<button type="button" class="btn btn-lg btn-corporate-color-1 px-4" data-bs-toggle="modal" data-bs-target="#callbackModal">Оставить заявку</button>
 				</div>
