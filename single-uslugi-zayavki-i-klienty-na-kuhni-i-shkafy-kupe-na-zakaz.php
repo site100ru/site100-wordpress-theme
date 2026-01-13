@@ -56,6 +56,7 @@ if (isset($_SESSION['win'])) {
 <body>
 
 
+	<!-- HEADER -->
 	<header class="header align-items-center justify-content-end">
 
 		<!-- Menu -->
@@ -315,7 +316,7 @@ if (isset($_SESSION['win'])) {
                 
 		</nav>
 	</header>
-
+	<!-- END HEADER -->
 
 
 	<!-- HOME -->
@@ -332,6 +333,7 @@ if (isset($_SESSION['win'])) {
 	</section>
 	<!-- /HOME -->
 
+	
 	<!-- PROCESS -->
 	<section id="process-section" class="process bg-white">
 		<div class="container">
