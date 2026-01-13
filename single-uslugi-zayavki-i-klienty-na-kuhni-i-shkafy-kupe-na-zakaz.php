@@ -156,7 +156,7 @@ if (isset($_SESSION['win'])) {
 										<li><a class="dropdown-item" href="#sp-promotion" data-target="service-promotion">Продвижение сайтов</a></li>
 										<li><a class="dropdown-item" href="#sp-support" data-target="service-support">Поддержка сайтов</a>
 										</li>
-										<li><a class="dropdown-item" href="https://site100.ru/uslugi/zayavki-i-klienty-na-kukhni-i-shkafy-kupe-na-zakaz/" data-target="service-kitchen">Заявки на корпусную мебель</a></li>
+										<li><a class="dropdown-item active" href="https://site100.ru/uslugi/zayavki-i-klienty-na-kukhni-i-shkafy-kupe-na-zakaz/" data-target="service-kitchen">Заявки на корпусную мебель</a></li>
 									</ul>
 								</li>
 
@@ -259,7 +259,7 @@ if (isset($_SESSION['win'])) {
 													сайтов</a></li>
 											<li><a class="dropdown-item" href="#sp-support" data-target="service-support">Поддержка сайтов</a>
 											</li>
-											<li><a class="dropdown-item" href="https://site100.ru/uslugi/zayavki-i-klienty-na-kukhni-i-shkafy-kupe-na-zakaz/" data-target="service-kitchen">Заявки на корпусную мебель</a></li>
+											<li><a class="dropdown-item active" href="https://site100.ru/uslugi/zayavki-i-klienty-na-kukhni-i-shkafy-kupe-na-zakaz/" data-target="service-kitchen">Заявки на корпусную мебель</a></li>
 										</ul>
 									</li>
 
@@ -1165,8 +1165,7 @@ if (isset($_SESSION['win'])) {
 					<a href="tel:+79307878068" class="contacts-phone">
 						<div style="display: flex;" class="align-items-center">
 							<div class="nav-li-float-left">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/mobile-phone-ico.svg"
-									style="position: relative; bottom: 1px;">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/mobile-phone-ico.svg" style="position: relative; bottom: 1px;">
 							</div>
 							<div class="nav-li-float-right phone-link">
 								+7 <span>(930)</span> 78-78-0-68
@@ -1176,8 +1175,7 @@ if (isset($_SESSION['win'])) {
 					</a>
 					<ul class="nav pt-4 pb-3">
 						<li class="nav-item">
-							<a class="nav-link ico-button ps-0 pe-2" href="https://wa.me/79307878068?web=1&app_absent=1&"
-								target="_blank">
+							<a class="nav-link ico-button ps-0 pe-2" href="https://wa.me/79307878068?web=1&app_absent=1&" target="_blank">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/whatsapp-ico.svg">
 							</a>
 						</li>
@@ -1210,15 +1208,14 @@ if (isset($_SESSION['win'])) {
 						<div class="col-6">
 							<ul class="nav flex-column">
 								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle arrow-element" href="#" role="button" data-bs-toggle="dropdown"
-										aria-expanded="false">
-										услуги
+									<a class="nav-link dropdown-toggle arrow-element" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+										Услуги
 									</a>
 									<ul class="dropdown-menu">
 										<li><a class="dropdown-item" href="#sp-create">Создание сайтов</a></li>
 										<li><a class="dropdown-item" href="#sp-promotion">Продвижение сайтов</a></li>
 										<li><a class="dropdown-item" href="#sp-support">Поддержка сайтов</a></li>
-										<li><a class="dropdown-item" href="https://site100.ru/uslugi/zayavki-i-klienty-na-kukhni-i-shkafy-kupe-na-zakaz/">Заявки на корпусную мебель</a></li>
+										<li><a class="dropdown-item active" href="https://site100.ru/uslugi/zayavki-i-klienty-na-kukhni-i-shkafy-kupe-na-zakaz/">Заявки на корпусную мебель</a></li>
 									</ul>
 								</li>
 								<li class="nav-item">
@@ -1235,11 +1232,7 @@ if (isset($_SESSION['win'])) {
 		<div class="footer-bottom-block container">
 			<p class="footer-bottom-text text-start text-md-center mb-0">Создание и продвижение сайтов: <a href="https://site100.ru">site100.ru</a></p>
 			<div class="policy-in-footer">
-				<a class="links-one" href="<?php echo get_template_directory_uri(); ?>/docs/Privacy-Policy.pdf" 
-					target="_blank">Политика конфиденциальности</a><span class="d-block d-md-none"></span><span
-					class="d-none d-md-inline-block">&nbsp;|&nbsp;</span><a
-					href="<?php echo get_template_directory_uri(); ?>/docs/Consent-to-the-processing-of-personal-data.pdf"
-					target="_blank">Согласие на обработку персональных данных</a>
+				<a class="links-one" href="<?php echo get_template_directory_uri(); ?>/docs/Privacy-Policy.pdf" target="_blank">Политика конфиденциальности</a><span class="d-block d-md-none"></span><span class="d-none d-md-inline-block">&nbsp;|&nbsp;</span><a href="<?php echo get_template_directory_uri(); ?>/docs/Consent-to-the-processing-of-personal-data.pdf" target="_blank">Согласие на обработку персональных данных</a>
 			</div>
 		</div>
 	</footer>
@@ -1436,8 +1429,7 @@ if (isset($_SESSION['win'])) {
 				<div class="modal-body">
 					<form method="post" action="<?php echo get_stylesheet_directory_uri(); ?>/mails/callback-mail.php">
 						<p><input type="text" name="name" class="form-control" placeholder="Имя"></p>
-						<p><input placeholder="Ваш телефон" type="tel" name="tel" class="form-control mb-3 mb-md-0 telMask"
-								id="exampleFormControlInput2" required></p>
+						<p><input placeholder="Ваш телефон" type="tel" name="tel" class="form-control mb-3 mb-md-0 telMask" id="exampleFormControlInput2" required></p>
 
 						<div>
 							<div class="form-check">
@@ -1471,8 +1463,7 @@ if (isset($_SESSION['win'])) {
 				<div class="modal-body">
 					<form method="post" action="<?php echo get_stylesheet_directory_uri(); ?>/mails/callback-mail.php">
 						<p><input type="text" class="form-control" name="name" placeholder="Имя"></p>
-						<p><input placeholder="Ваш телефон" type="tel" name="tel" class="form-control mb-3 mb-md-0 telMask"
-								id="exampleFormControlInput2" required></p>
+						<p><input placeholder="Ваш телефон" type="tel" name="tel" class="form-control mb-3 mb-md-0 telMask" id="exampleFormControlInput2" required></p>
 
 						<div>
 							<div class="form-check">
