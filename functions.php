@@ -71,6 +71,21 @@ function register_post_types() {
 
 
 
+/*** ДОБАВЛЯЕМ К ССЫЛКЕ ТИПА ЗАПИСИ POST - blog/ ***/
+add_filter('post_type_link', 'add_blog_prefix_to_posts', 10, 2);
+function add_blog_prefix_to_posts($post_link, $post) {
+    // Проверяем, что это стандартный пост
+    if ($post->post_type == 'post') {
+        // Добавляем /blog/ перед slug поста
+        $post_link = str_replace('/' . $post->post_name . '/', '/blog/' . $post->post_name . '/', $post_link);
+    }
+    return $post_link;
+}
+/*** END ДОБАВЛЯЕМ К ССЫЛКЕ ТИПА ЗАПИСИ POST - blog/ ***/
+
+
+
+
 /*** ОБНОВЛЕНИЕ THEME ***/
 add_filter('pre_set_site_transient_update_themes', 'check_custom_theme_updates');
 
