@@ -72,15 +72,17 @@ function register_post_types() {
 
 
 /*** ДОБАВЛЯЕМ К ССЫЛКЕ ТИПА ЗАПИСИ POST - blog/ ***/
-add_filter('post_type_link', 'add_blog_prefix_to_posts', 10, 2);
-function add_blog_prefix_to_posts($post_link, $post) {
-    // Проверяем, что это стандартный пост
-    if ($post->post_type == 'post') {
-        // Добавляем /blog/ перед slug поста
-        $post_link = str_replace('/' . $post->post_name . '/', '/blog/' . $post->post_name . '/', $post_link);
+add_action('template_redirect', function() {
+    if (is_single() && strpos($_SERVER['REQUEST_URI'], '/blog/') === false) {
+        $post = get_queried_object();
+        $cat = get_the_category($post->ID)[0] ?? null;
+        
+        if ($cat) {
+            wp_redirect("/blog/{$cat->slug}/{$post->post_name}/", 301);
+            exit;
+        }
     }
-    return $post_link;
-}
+});
 /*** END ДОБАВЛЯЕМ К ССЫЛКЕ ТИПА ЗАПИСИ POST - blog/ ***/
 
 
