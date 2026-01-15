@@ -72,17 +72,26 @@ function register_post_types() {
 
 
 /*** ДОБАВЛЯЕМ К ССЫЛКЕ ТИПА ЗАПИСИ POST - blog/ ***/
-add_action('template_redirect', function() {
-    if (is_single() && strpos($_SERVER['REQUEST_URI'], '/blog/') === false) {
-        $post = get_queried_object();
-        $cat = get_the_category($post->ID)[0] ?? null;
-        
-        if ($cat) {
-            wp_redirect("/blog/{$cat->slug}/{$post->post_name}/", 301);
-            exit;
+// 1. Добавляем правило для /blog/категория/пост/
+add_action('init', function() {
+    add_rewrite_rule(
+        '^blog/([^/]+)/([^/]+)/?$',
+        'index.php?category_name=$matches[1]&name=$matches[2]',
+        'top'
+    );
+});
+
+// 2. Меняем ссылки ТОЛЬКО для post
+add_filter('post_link', function($url, $post) {
+    if ($post->post_type == 'post') {
+        $cats = get_the_category($post->ID);
+        if (!empty($cats)) {
+            $cat = $cats[0];
+            return home_url("/blog/{$cat->slug}/{$post->post_name}/");
         }
     }
-});
+    return $url;
+}, 10, 2);
 /*** END ДОБАВЛЯЕМ К ССЫЛКЕ ТИПА ЗАПИСИ POST - blog/ ***/
 
 
