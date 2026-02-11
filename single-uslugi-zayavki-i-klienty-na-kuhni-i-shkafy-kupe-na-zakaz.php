@@ -324,8 +324,10 @@ if (isset($_SESSION['win'])) {
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col">
-					<h1 class="home-title mb-4">Заявки и&nbsp;клиенты на&nbsp;кухни и&nbsp;шкафы купе на&nbsp;заказ</h1>
-					<h2 class="home-subtitle mb-4">Приведу клиентов на изготовление кухонь, шкафов, гардеробных, тумб и другой корпусной мебели на заказ от 1 500 рублей за заявку от реального клиента!</h2>
+				<h5>Комплексное продвижение мебельных компаний</h5>
+				<h1 class="home-title mb-4">Заявки и&nbsp;клиенты на&nbsp;кухни и&nbsp;шкафы купе на&nbsp;заказ</h1>
+					<!--h2 class="home-subtitle mb-4">Разработаем сайт. Настроим рекламу. Проведем SEO-оптимизацию. Оформим социальные сети. Увеличим обращения клиентов в Ваш мебельный бизнес.</h2-->
+					<p class="home-subtitle mb-4">Разработаем сайт. Настроим рекламу. Проведем SEO-оптимизацию. Оформим социальные сети. Увеличим обращения клиентов в Ваш мебельный бизнес.</p>
 					<button type="button" class="btn btn-lg btn-corporate-color-1 px-4" data-bs-toggle="modal" data-bs-target="#callbackModal">Оставить заявку</button>
 				</div>
 			</div>
