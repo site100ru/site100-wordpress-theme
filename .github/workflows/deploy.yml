@@ -17,10 +17,9 @@ jobs:
           script: |
             cd ~/site100.ru/public_html/wp-content/themes/site100theme
             
-            #Жесткая перезапись сервера
+            #Перезапишет все, что было на сервере
             git fetch origin
             git reset --hard origin/main
             
-            #Можно этот вариант,
-            #но если на сервере были изменения мимо github то будет ошибка
+            #Выдаст ошибку если на сервере были изменения
             #git pull
