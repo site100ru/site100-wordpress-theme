@@ -3,6 +3,7 @@
 	--corporate-color-1: #dc3545;
 	--corporate-color-hover-1: #bb2d3c;
 	--corporate-color-active-1: #902531;
+	--light-color: #ebebeb;
 	/* --corporate-color-2: #BB2D3C; */
 	--default-color: #323232;
     --bs-nav-link-padding-x: 0;
@@ -69,6 +70,18 @@ h2 {
 	color: var(--default-color);
 	font-size: 30px;
 }
+
+h2 .page-subtitle {
+	color: var(--light-color);
+	font-family: Gilroy-Semibold;
+	font-size: 44px; }
+
+	@media (max-width: 768px) {
+		h2 .page-subtitle {
+			font-size: 24px;
+		}
+	}
+
 
 h3 {
 	font-family: HelveticaNeueCyr-Medium;
