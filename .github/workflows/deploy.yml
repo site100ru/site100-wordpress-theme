@@ -17,3 +17,4 @@ jobs:
           script: |
             cd ~/site100.ru/public_html/wp-content/themes/site100theme
             git pull
+            
