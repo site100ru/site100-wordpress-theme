@@ -5,14 +5,13 @@
  * Template Post Type: uslugi
  */
 
-?>
-<?php
-
 if (isset($_SESSION['win'])) {
 	unset($_SESSION['win']);
 	$display = "block";
-} else
+} else {
 	$display = "none";
+}
+	
 ?>
 
 <!doctype html>
