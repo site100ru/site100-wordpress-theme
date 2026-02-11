@@ -16,5 +16,11 @@ jobs:
           key: ${{ secrets.SITE100_KEY }}
           script: |
             cd ~/site100.ru/public_html/wp-content/themes/site100theme
-            git pull
             
+            #Жесткая перезапись сервера
+            git fetch origin
+            git reset --hard origin/main
+            
+            #Можно этот вариант,
+            #но если на сервере были изменения мимо github то будет ошибка
+            #git pull
