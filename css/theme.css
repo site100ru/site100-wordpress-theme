@@ -71,7 +71,7 @@ h2 {
 	font-size: 30px;
 }
 
-h2 .page-subtitle {
+h2.page-subtitle {
 	color: var(--light-color);
 	font-family: Gilroy-Semibold;
 	font-size: 44px; }
