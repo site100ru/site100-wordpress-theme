@@ -77,7 +77,7 @@ h2.page-subtitle {
 	font-size: 44px; }
 
 	@media (max-width: 768px) {
-		h2 .page-subtitle {
+		h2.page-subtitle {
 			font-size: 24px;
 		}
 	}
