@@ -326,7 +326,6 @@ if (isset($_SESSION['win'])) {
 				<div class="col">
 					<h2 class="page-subtitle mb-4">Комплексное продвижение мебельных компаний</h2>
 					<h1 class="home-title mb-4">Заявки и&nbsp;клиенты на&nbsp;кухни и&nbsp;шкафы купе на&nbsp;заказ</h1>
-					<!--h2 class="home-subtitle mb-4">Разработаем сайт. Настроим рекламу. Проведем SEO-оптимизацию. Оформим социальные сети. Увеличим обращения клиентов в Ваш мебельный бизнес.</h2-->
 					<p class="home-subtitle mb-4">Разработаем сайт. Настроим рекламу. Проведем SEO-оптимизацию. Оформим социальные сети. Увеличим обращения клиентов в Ваш мебельный бизнес.</p>
 					<button type="button" class="btn btn-lg btn-corporate-color-1 px-4" data-bs-toggle="modal" data-bs-target="#callbackModal">Оставить заявку</button>
 				</div>
