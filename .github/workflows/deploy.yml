@@ -11,9 +11,9 @@ jobs:
       - name: Connect to server
         uses: appleboy/ssh-action@v0.1.10
         with:
-          host: ${{ secrets.REGRU_HOST }}
-          username: ${{ secrets.REGRU_USER }}
-          key: ${{ secrets.REGRU_KEY }}
+          host: ${{ secrets.SITE100_HOST }}
+          username: ${{ secrets.SITE100_USER }}
+          key: ${{ secrets.SITE100_KEY }}
           script: |
-            cd /var/www/u1538455/data/www/site100.ru/wp-content/themes/site100theme
+            cd ~/site100.ru/public_html/wp-content/themes/site100theme
             git pull
