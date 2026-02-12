@@ -19,16 +19,19 @@ if ($_POST) {
 
 		$name = $_POST['name'];
 		$tel = $_POST['tel'];
+		
+		$to = "vasilyev-r@mail.ru, vasilyev-r@yandex.ru";
+		$subject = "Заявка с сайта site100.ru";
+		$message = "Имя: " . $name . "\n";
+		$message .= "Телефон: " . $tel;
+		$headers  = "MIME-Version: 1.0\r\n";
+		$headers .= "From: site100.ru\r\n";
+		$headers .= "Content-type: text/html; charset=utf-8\r\n";
+		
+		mail( $to, $subject, $message, $headers );
 
-		mail(
-			"sidorov-vv3@mail.ru, vasilyev-r@yandex.ru, vasilyev-r@mail.ru",
-			"Заказ обратного звонка с сайта site100.ru",
-			"
-            Клиент: " . $name . "\n
-            Телефон: " . $tel
-		);
 		$_SESSION['win'] = 1;
-		$_SESSION['recaptcha'] = '<p class="text-light">Спасибо за обращение! Мы ответим Вам в&#160;ближайшее время.</p>';
+		$_SESSION['recaptcha'] = '<p class="text-light">Спасибо за обращение! Я отвечу Вам в&#160;ближайшее время.</p>';
 		header("Location: " . $_SERVER['HTTP_REFERER']);
 
 	} else {
@@ -41,4 +44,3 @@ if ($_POST) {
 	header("Location: " . $_SERVER['HTTP_REFERER']);
 	exit();
 }
-?>
