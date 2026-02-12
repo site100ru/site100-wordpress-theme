@@ -901,11 +901,11 @@ if (isset($_SESSION['win'])) {
 	<div id="contacts-sp"></div>
 	<section class="orderLeftMenSection bg-white">
 		<div class="container">
-			<div class="row">
+			<div class="row justify-content-center">
 				<div class="d-none d-md-block col-md-5" style="position: relative;">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/ico/left-men.png" class="order-section-men">
 				</div>
-				<div class="col-md-5">
+				<div class="col-md-5 pb-5">
 					<h2>Оставьте заявку на бесплатный аудит Вашего сайта и рекламы</h2>
 					<p class="order-description mb-2" style="max-width: 570px;">По итогам аудита я подготовлю рекомендации по повышению эффективности, укажу точные сроки и стоимость выполнения работ.</p>
 					<img src="<?php echo get_template_directory_uri(); ?>/img/ico/section-title-decoration.svg" class="mb-5">
@@ -927,30 +927,32 @@ if (isset($_SESSION['win'])) {
 							</div>
 						</div>
 					</form>
-					<div class="col pt-5">
-						<ul class="nav justify-content-start">
-							<li class="nav-item">
-								<a class="nav-link ico-button px-2" href="https://wa.me/79307878068?web=1&app_absent=1&"
-									target="_blank">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/ico/whatsapp-ico.svg">
-								</a>
-							</li>
-							<li class="nav-item">
+					<div class="row">
+						<div class="col pt-5">
+							<ul class="nav justify-content-start">
+								<li class="nav-item">
+									<a class="nav-link ico-button px-2" href="https://wa.me/79307878068?web=1&app_absent=1&"
+										target="_blank">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/ico/whatsapp-ico.svg">
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link ico-button px-3" href="https://t.me/79307878068" target="_blank">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg">
+									</a>
+								</li>
+								<!-- <li class="nav-item">
+									<a class="nav-link ico-button px-2" href="https://viber.me/79307878068" target="_blank">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/ico/viber-ico.svg">
+									</a>
+								</li> -->
+								<!-- <li class="nav-item">
 								<a class="nav-link ico-button px-3" href="https://t.me/79307878068" target="_blank">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg">
-								</a>
-							</li>
-							<!-- <li class="nav-item">
-								<a class="nav-link ico-button px-2" href="https://viber.me/79307878068" target="_blank">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/ico/viber-ico.svg">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/ico/max.svg">
 								</a>
 							</li> -->
-                            <!-- <li class="nav-item">
-                            <a class="nav-link ico-button px-3" href="https://t.me/79307878068" target="_blank">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/ico/max.svg">
-                            </a>
-                        </li> -->
-						</ul>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
