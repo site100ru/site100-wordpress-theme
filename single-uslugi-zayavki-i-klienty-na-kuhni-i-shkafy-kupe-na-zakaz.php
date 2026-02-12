@@ -215,8 +215,7 @@ if (isset($_SESSION['win'])) {
 				</div>
 			</div>
 		</nav>
-		<nav
-			class="fixed-menu header-nav-bottom navbar navbar-expand-lg navbar-light start-0 d-flex align-items-center justify-content-lg-between justify-content-around mt-0">
+		<nav class="fixed-menu header-nav-bottom navbar navbar-expand-lg navbar-light start-0 d-flex align-items-center justify-content-lg-between justify-content-around mt-0">
 			<div class="container-fluid container-lg d-flex bg-white">
                 <div class="container d-flex bg-white w-100 justify-content-between align-items-center pb-2 pb-lg-0">
 					<a class="navbar-brand logo me-1" href="https://site100.ru">site<span class="text-danger">100</span>.ru</a>
@@ -312,7 +311,7 @@ if (isset($_SESSION['win'])) {
 						</div>
 					</div>
 				</div>
-                
+			</div>
 		</nav>
 	</header>
 	<!-- END HEADER -->
@@ -445,6 +444,7 @@ if (isset($_SESSION['win'])) {
 	</section>
 	<!-- /PROCESS-LIGHT -->
 
+	
 	<!-- PORTFOLIO -->
 	<section class="portfolio bg-white">
 		<div class="container">
@@ -651,6 +651,7 @@ if (isset($_SESSION['win'])) {
 	</script>
 	<!-- /PORTFOLIO -->
 
+	
 	<!-- ABOUT -->
 	<section class="about bg-light">
 		<div class="container">
@@ -675,6 +676,7 @@ if (isset($_SESSION['win'])) {
 	</section>
 	<!-- /ABOUT -->
 
+	
 	<!-- ADVANTAGE-->
 	<section class="advantage bg-white">
 		<div class="container">
@@ -904,22 +906,18 @@ if (isset($_SESSION['win'])) {
 					<img src="<?php echo get_template_directory_uri(); ?>/img/ico/left-men.png" class="order-section-men">
 				</div>
 				<div class="col-md-6">
-					<h2>Хотите узнать стоимость?<br>
-						Или есть вопросы?</h2>
-					<p class="order-description mb-2" style="max-width: 570px;">Оставьте Ваши контакты и я перезвоню Вам в течение
-						10 минут или напишите мне в мессенджер и я подробно отвечу на Ваши вопросы.</p>
+					<h2>Оставьте заявку на бесплатный аудит Вашего сайта и рекламы</h2>
+					<p class="order-description mb-2" style="max-width: 570px;">По итогам аудита я подготовлю рекомендации по повышению эффективности, укажу точные сроки и стоимость выполнения работ.</p>
 					<img src="<?php echo get_template_directory_uri(); ?>/img/ico/section-title-decoration.svg" class="mb-5">
 					<form method="post" action="<?php echo get_stylesheet_directory_uri(); ?>/mails/callback-mail.php">
 						<div class="row">
 							<div class="col-8 col-lg-5">
 								<label for="exampleFormControlInput1" class="form-label">Ваше имя</label>
-								<input type="text" name="name" class="form-control mb-3 mb-md-0" id="exampleFormControlInput1"
-									placeholder="Имя">
+								<input type="text" name="name" class="form-control mb-3 mb-md-0" id="exampleFormControlInput1" placeholder="Имя">
 							</div>
 							<div class="col-8 col-lg-5">
 								<label for="exampleFormControlInput2" class="form-label">Ваш телефон</label>
-								<input placeholder="Ваш телефон" name="tel" type="tel" class="form-control mb-3 mb-md-0 telMask"
-									id="exampleFormControlInput2" required>
+								<input placeholder="Ваш телефон" name="tel" type="tel" class="form-control mb-3 mb-md-0 telMask" id="exampleFormControlInput2" required>
 							</div>
 						</div>
 						<div class="row">
