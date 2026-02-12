@@ -50,6 +50,28 @@ if (isset($_SESSION['win'])) {
         <!-- Код счетчика в (head) -->
         <?php echo $counter_head; ?>
     <?php endif; ?>
+
+    <style>
+        
+        #main-home-header {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+        
+        @media (max-width: 1399.98px) {
+            #main-home-header::after {
+                height: 100%;
+            }
+            
+            #main-home-header {
+                height: auto;
+                padding-top: 30px;
+                padding-bottom: 60px;
+                margin-top: -10px;
+            }
+        }
+    
+    </style>
 </head>
 
 <body>
