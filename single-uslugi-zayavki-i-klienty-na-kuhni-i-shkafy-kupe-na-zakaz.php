@@ -902,10 +902,10 @@ if (isset($_SESSION['win'])) {
 	<section class="orderLeftMenSection bg-white">
 		<div class="container">
 			<div class="row">
-				<div class="d-none d-md-block col-md-6" style="position: relative;">
+				<div class="d-none d-md-block col-md-5" style="position: relative;">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/ico/left-men.png" class="order-section-men">
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-5">
 					<h2>Оставьте заявку на бесплатный аудит Вашего сайта и рекламы</h2>
 					<p class="order-description mb-2" style="max-width: 570px;">По итогам аудита я подготовлю рекомендации по повышению эффективности, укажу точные сроки и стоимость выполнения работ.</p>
 					<img src="<?php echo get_template_directory_uri(); ?>/img/ico/section-title-decoration.svg" class="mb-5">
@@ -923,7 +923,7 @@ if (isset($_SESSION['win'])) {
 						<div class="row">
 							<div class="col-8 col-lg-5">
 								<input type="hidden" id="g-recaptcha-response-order-3-with-mail" name="g-recaptcha-response">
-								<button type="submit" class="btn btn-lg btn-corporate-color-1 w-100 mt-3">Хорошо, жду звонка</button>
+								<button type="submit" class="btn btn-lg btn-corporate-color-1 w-100 mt-3">Оставить заявку</button>
 							</div>
 						</div>
 					</form>
