@@ -54,8 +54,9 @@ if (isset($_SESSION['win'])) {
     <style>
         
         #main-home-header {
+            height: 100%;
             padding-top: 60px;
-            padding-bottom: 60px;
+            padding-bottom: 120px;
         }
         
         @media (max-width: 1399.98px) {
@@ -65,12 +66,22 @@ if (isset($_SESSION['win'])) {
             
             #main-home-header {
                 height: auto;
-                padding-top: 30px;
+                padding-top: 60px;
                 padding-bottom: 60px;
-                margin-top: -10px;
+            }
+
+            h2.page-subtitle {
+                font-size: 30px;
+                text-wrap: balance;
             }
         }
     
+        @media (max-width: 768px) {
+            h2.page-subtitle {
+                font-size: 24px;
+            }
+        }
+
     </style>
 </head>
 
@@ -344,8 +355,8 @@ if (isset($_SESSION['win'])) {
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col">
-					<h2 class="page-subtitle mb-4">Комплексное продвижение мебельных компаний</h2>
-					<h1 class="home-title mb-4">Заявки и&nbsp;клиенты на&nbsp;кухни и&nbsp;шкафы купе на&nbsp;заказ</h1>
+					<h2 class="page-subtitle mb-4 mb-lg-0">Комплексное продвижение мебельных компаний</h2>
+					<h1 class="home-title mb-4 mb-lg-1">Заявки и&nbsp;клиенты на&nbsp;кухни и&nbsp;шкафы купе на&nbsp;заказ</h1>
 					<p class="home-subtitle mb-4">Разработаем сайт. Настроим рекламу. Проведем SEO-оптимизацию. Оформим социальные сети. Увеличим обращения клиентов в Ваш мебельный бизнес.</p>
 					<button type="button" class="btn btn-lg btn-corporate-color-1 px-4" data-bs-toggle="modal" data-bs-target="#callbackModal">Оставить заявку</button>
 				</div>
