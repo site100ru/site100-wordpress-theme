@@ -418,7 +418,7 @@ if (isset($_SESSION['win'])) {
 						<div class="row pt-3">
 							<div class="col">
 								<h3>Сайт</h3>
-								<p class="mb-0">На основе готового и проверенного решения специально для мебельного бизнеса, создам продающий сайт для Вашей компании. Пример сайта на готовом решении: <a href="https://dekorsever.ru/" target="_blank">https://dekorsever.ru</a></p>
+								<p class="mb-0">На основе готового и проверенного решения специально для мебельного бизнеса, создам продающий сайт для Вашей компании. Пример сайта на готовом решении: <a href="https://мозаика62.рф" target="_blank">мозаика62.рф</a></p>
 							</div>
 						</div>
 					</div>
@@ -739,7 +739,7 @@ if (isset($_SESSION['win'])) {
 									<img src="<?php echo get_template_directory_uri(); ?>/img/ico/advantage-ico-2.svg" class="img-fluid">
 								</div>
 								<div class="col-10">
-									<p class="advantage-title text-start">Ненадо тратиться на настройку рекламы «с нуля»</p>
+									<p class="advantage-title text-start">Не надо тратиться на настройку рекламы «с нуля»</p>
 									<p class="advantage-description text-start">Уже есть <span>готовая, настроенная</span> рекламная кампания. Ее просто необходимо подогнать под задачи именно Вашего бизнеса.</p>
 								</div>
 							</div>
@@ -762,7 +762,7 @@ if (isset($_SESSION['win'])) {
 								</div>
 								<div class="col-10">
 									<p class="advantage-title text-start">Достоверная информация о достигнутых результатах</p>
-									<p class="advantage-description text-start">Гарантирую Вам достоверность своих результатов и готов дополнительно их любым способом, например выслать дополнительный скриншот или записать видео.</p>
+									<p class="advantage-description text-start">Гарантирую Вам достоверность своих результатов и готов дополнительно подтвердить их любым способом, например выслать дополнительный скриншот или записать видео.</p>
 								</div>
 							</div>
 						</div>
@@ -1471,10 +1471,7 @@ if (isset($_SESSION['win'])) {
 							<div class="form-check">
 								<input class="form-check-input" type="checkbox" id="gridCheck-3" checked>
 								<label class="form-check-label" for="gridCheck-3">
-									<p class="mb-0"><small>Даю согласие на обработку персональных данных. Подробнее об обработке
-											персональных данных в <a
-												href="<?php echo get_template_directory_uri(); ?>/docs/Privacy-Policy.pdf"
-												target="_blank">Политике конфиденциальности.</a></small></p>
+									<p class="mb-0"><small>Даю согласие на обработку персональных данных. Подробнее об обработке персональных данных в <a href="<?php echo get_template_directory_uri(); ?>/docs/Privacy-Policy.pdf" target="_blank">Политике конфиденциальности.</a></small></p>
 								</label>
 							</div>
 						</div>
