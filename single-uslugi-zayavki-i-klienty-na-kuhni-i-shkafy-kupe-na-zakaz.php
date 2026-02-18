@@ -728,7 +728,7 @@ if (isset($_SESSION['win'])) {
 									<img src="<?php echo get_template_directory_uri(); ?>/img/ico/advantage-ico-1.svg" class="img-fluid">
 								</div>
 								<div class="col-10">
-									<p class="advantage-title text-start">Ненадо тратиться на разработку дорогого сайта</p>
+									<p class="advantage-title text-start">Не надо тратиться на разработку дорогого сайта</p>
 									<p class="advantage-description text-start">Уже есть <span>готовый, проверенный</span> и продающий сайт, с необходимой оптимизацией. Просто наполняется информацией о Вашей компании. Но при желании всегда можем обсудить разработку уникального сайта.</p>
 								</div>
 							</div>
