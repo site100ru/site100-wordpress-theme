@@ -4,18 +4,14 @@
  * Template Post Type: page
  */
 
-?>
-
-<?php
-
 if (isset($_SESSION['win'])) {
 	unset($_SESSION['win']);
 	$display = "block";
 } else {
 	$display = "none";
 }
-
 ?>
+
 
 <!doctype html>
 <html lang="ru">

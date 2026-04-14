@@ -530,7 +530,7 @@ if (isset($_SESSION['win'])) {
 										<div class="carousel-item active">
 											<a onClick="portGalleryOn('gallery-portfolio','img-portfolio-1');">
 												<div class="single-product-img approximation">
-													<img src="<?php echo get_template_directory_uri(); ?>/img/slide-bg.jpg" class="d-block w-100"
+													<img src="<?php echo get_template_directory_uri(); ?>/img/direct-portfolio-1.jpg" class="d-block w-100"
 														loading="lazy" alt="...">
 													<div class="magnifier"></div>
 												</div>
@@ -539,7 +539,7 @@ if (isset($_SESSION['win'])) {
 										<div class="carousel-item">
 											<a onClick="portGalleryOn('gallery-portfolio','img-portfolio-2');">
 												<div class="single-product-img approximation">
-													<img src="<?php echo get_template_directory_uri(); ?>/img/slide-2.jpg" class="d-block w-100"
+													<img src="<?php echo get_template_directory_uri(); ?>/img/direct-portfolio-2.jpg" class="d-block w-100"
 														loading="lazy" alt="...">
 													<div class="magnifier"></div>
 												</div>
@@ -548,7 +548,7 @@ if (isset($_SESSION['win'])) {
 										<div class="carousel-item">
 											<a onClick="portGalleryOn('gallery-portfolio','img-portfolio-3');">
 												<div class="single-product-img approximation">
-													<img src="<?php echo get_template_directory_uri(); ?>/img/slide-3.jpg" class="d-block w-100"
+													<img src="<?php echo get_template_directory_uri(); ?>/img/direct-portfolio-3.jpg" class="d-block w-100"
 														loading="lazy" alt="...">
 													<div class="magnifier"></div>
 												</div>
@@ -584,7 +584,7 @@ if (isset($_SESSION['win'])) {
 											<div id="img-portfolio-1" class="carousel-item h-100">
 												<div class="row align-items-center h-100">
 													<div class="col text-center">
-														<img src="<?php echo get_template_directory_uri(); ?>/img/slide-bg.jpg"
+														<img src="<?php echo get_template_directory_uri(); ?>/img/direct-portfolio-1.jpg"
 															class="img-fluid lazyload" loading="lazy" style="max-width: 75vw; max-height: 75vh"
 															alt="..." />
 													</div>
@@ -593,7 +593,7 @@ if (isset($_SESSION['win'])) {
 											<div id="img-portfolio-2" class="carousel-item h-100">
 												<div class="row align-items-center h-100">
 													<div class="col text-center">
-														<img src="<?php echo get_template_directory_uri(); ?>/img/slide-2.jpg"
+														<img src="<?php echo get_template_directory_uri(); ?>/img/direct-portfolio-2.jpg"
 															class="img-fluid lazyload" loading="lazy" style="max-width: 75vw; max-height: 75vh"
 															alt="..." />
 													</div>
@@ -602,7 +602,7 @@ if (isset($_SESSION['win'])) {
 											<div id="img-portfolio-3" class="carousel-item h-100">
 												<div class="row align-items-center h-100">
 													<div class="col text-center">
-														<img src="<?php echo get_template_directory_uri(); ?>/img/slide-3.jpg"
+														<img src="<?php echo get_template_directory_uri(); ?>/img/direct-portfolio-3.jpg"
 															class="img-fluid lazyload" loading="lazy" style="max-width: 75vw; max-height: 75vh"
 															alt="..." />
 													</div>
